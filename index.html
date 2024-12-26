@@ -1,0 +1,87 @@
+const Portfolio = () => {
+    return (
+      <main className="max-w-3xl mx-auto p-8 font-mono">
+        <h1 className="text-xl mb-4">About</h1>
+        
+        <div className="mb-12">
+          <p className="mb-4">Hi! I'm Alyssia Jovellanos</p>
+  
+          <section className="mb-8">
+            <h2 className="text-lg font-bold mb-2">[Current]</h2>
+            <div className="pl-4">
+              • Independent AI Researcher<br/>
+              • UK AI Safety Institute - dangerous capability evaluations<br/>
+              • International Space Station, Deep Space Biology & MD Anderson Cancer Center - T-Cell Microgravity Research<br/>
+              • NASA Multi-Omics & AI/ML Analysis Working Group<br/>
+              • Oxford ARBOx<br/>
+              • Olympic Recurve Archery<br/>
+              • Annual charity payloads w/ SpaceX - engraving names & dreams of cancer patients on space missions<br/>
+            </div>
+          </section>
+  
+          <section className="mb-8">
+            <h2 className="text-lg font-bold mb-2">[Some Former Lives]</h2>
+            <div className="pl-4">
+              • Various contract roles & advisory<br/>  
+              • YC W21, 2021 Interact Fellowship<br/>
+              • Microsoft - Federated Learning / Personalization<br/>
+              • Google - Smart Compose/Gmail Intelligence Team<br/>
+              • Stanford - Remote CS106A Instructor<br/>
+              • Montreal Institute for Learning Algorithms (MILA)<br/>
+              • International Quant Championship - Team Canada, North American Champions (Ranked 3rd out of 18,000 teams across 131 countries)<br/>
+              • Founded Canada's largest hackathon for change<br/>
+              • Computing education initiatives in low-income neighborhoods<br/>
+              • Miss Universe Canada
+            </div>
+          </section>
+  
+          <section className="mb-8">
+            <h2 className="text-lg font-bold mb-2">[Other]</h2>
+            <div className="pl-4">
+              • Olympic recurve archery (aiming for 2028/2032 olympics!)<br/>
+              • Reading <br/>
+              • Music production & singing<br/>
+              • Personal color analysis (certified in both Western and Korean color theory - can consult on request!)<br/>
+              • Pilates (certified beginner/intermediate instructor!)<br/>
+              • Almost competed against Magnus Carlsen (4x world chess champion)<br/>
+              • Canadian<br/>
+              • Known for frequent laughter :)
+            </div>
+          </section>
+  
+          <section className="mb-8">
+            <h2 className="text-lg font-bold mb-2">[Blog]</h2>
+            <div className="pl-4">
+              • Coming soon!
+            </div>
+          </section>
+        </div>
+
+        <section className="mb-8">
+            <h2 className="text-lg font-bold mb-2">[Contact]</h2>
+            <div className="pl-4">
+              • Twitter<br/>
+              • Email
+            </div>
+          </section>
+        </div>
+  
+        <section>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[...Array(8)].map((_, i) => (
+              <figure key={i} className="mb-1">
+                <img 
+                  src={`/api/placeholder/200/200`}
+                  alt={`Documentation ${i+1}`}
+                  className="w-full grayscale hover:grayscale-0 transition-all"
+                />
+                <figcaption className="text-xs mt-1">[doc_{i+1}.jpg]</figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+      </main>
+    );
+  };
+  
+  export default Portfolio;
