@@ -142,24 +142,37 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
   </section>
 );
 
-const ImageModal = ({ photo, onClose }: { photo: { src: string; alt: string }; onClose: () => void }) => (
-  <div 
-    className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
-    onClick={onClose}
-  >
-    <div className="relative max-w-5xl w-full h-[80vh] rounded-lg overflow-hidden">
-      <Image
-        src={photo.src}
-        alt={photo.alt}
-        width={1200}
-        height={800}
-        className="object-contain w-full h-full grayscale hover:grayscale-0 transition-all duration-300"
-        sizes="90vw"
-        priority
-      />
+const ImageModal = ({ photo, onClose }: { photo: { src: string; alt: string }; onClose: () => void }) => {
+  useEffect(() => {
+    const handleEscapeKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+
+    document.addEventListener('keydown', handleEscapeKey);
+    return () => document.removeEventListener('keydown', handleEscapeKey);
+  }, [onClose]);
+
+  return (
+    <div 
+      className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+      onClick={onClose}
+    >
+      <div className="relative max-w-5xl w-full h-[80vh] rounded-lg overflow-hidden">
+        <Image
+          src={photo.src}
+          alt={photo.alt}
+          width={1200}
+          height={800}
+          className="object-contain w-full h-full grayscale hover:grayscale-0 transition-all duration-300"
+          sizes="90vw"
+          priority
+        />
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 const Portfolio = () => {
   const [selectedPhoto, setSelectedPhoto] = useState<{ src: string; alt: string } | null>(null);
