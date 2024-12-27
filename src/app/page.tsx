@@ -204,99 +204,6 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
   </section>
 );
 
-const Cloud = ({ x, y, scale, delay }: { x: number; y: number; scale: number; delay: number }) => (
-  <motion.path
-    d="M25,60 Q40,45 50,60 Q65,45 75,60 Q85,45 90,60 L90,70 Q75,75 50,70 Q25,75 25,70 Z"
-    className="fill-gray-200"
-    style={{ 
-      transformOrigin: 'center',
-      translateX: x,
-      translateY: y,
-      scale
-    }}
-    initial={{ translateY: y }}
-    animate={{ 
-      translateY: [y - 10, y + 10, y - 10],
-      translateX: [x - 5, x + 5, x - 5]
-    }}
-    transition={{
-      duration: 10,
-      delay,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }}
-  />
-);
-
-const SunRay = ({ rotation, delay }: { rotation: number; delay: number }) => (
-  <motion.div
-    className="absolute w-24 h-1 bg-gradient-to-r from-yellow-300/80 to-transparent"
-    style={{ 
-      transformOrigin: 'left center',
-      rotate: rotation,
-      left: '50%',
-      top: '50%'
-    }}
-    initial={{ opacity: 0.3, scale: 0.8 }}
-    animate={{ 
-      opacity: [0.3, 0.6, 0.3],
-      scale: [0.8, 1.1, 0.8]
-    }}
-    transition={{
-      duration: 3,
-      delay,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }}
-  />
-);
-
-const DayScene = () => {
-  const CLOUD_COUNT = 6;
-  const RAY_COUNT = 12;
-  
-  const clouds = Array.from({ length: CLOUD_COUNT }, (_, i) => ({
-    id: i,
-    x: (i * 200) % window.innerWidth,
-    y: 50 + Math.random() * 100,
-    scale: 0.5 + Math.random() * 0.5,
-    delay: Math.random() * 2
-  }));
-
-  const rays = Array.from({ length: RAY_COUNT }, (_, i) => ({
-    id: i,
-    rotation: (i * 360) / RAY_COUNT,
-    delay: (i * 0.2) % 2
-  }));
-
-  return (
-    <div className="fixed inset-0 block dark:hidden pointer-events-none overflow-hidden">
-      <svg className="w-full h-full">
-        {clouds.map((cloud) => (
-          <Cloud key={cloud.id} {...cloud} />
-        ))}
-      </svg>
-      
-      <motion.div 
-        className="absolute right-[15%] top-[15%] w-20 h-20 rounded-full bg-yellow-400/90"
-        animate={{
-          scale: [1, 1.1, 1],
-          opacity: [0.8, 0.9, 0.8]
-        }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      >
-        {rays.map((ray) => (
-          <SunRay key={ray.id} {...ray} />
-        ))}
-      </motion.div>
-    </div>
-  );
-};
-
 const Portfolio = () => {
   const PHOTO_COUNT = 5;
   const photoItems = Array.from({ length: PHOTO_COUNT }, (_, i) => i);
@@ -304,7 +211,6 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
       <StarField />
-      <DayScene />
       <MoonScene />
       <main className="max-w-3xl mx-auto p-8 font-mono relative">
         <DarkModeToggle />
