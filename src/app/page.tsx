@@ -36,18 +36,102 @@ const StarField = () => {
   );
 };
 
+const MoonGlow = ({ rotation, delay }: { rotation: number; delay: number }) => (
+  <motion.div
+    className="absolute w-16 h-1 bg-gradient-to-r from-blue-100/30 to-transparent"
+    style={{ 
+      transformOrigin: 'left center',
+      rotate: rotation,
+      left: '50%',
+      top: '50%'
+    }}
+    initial={{ opacity: 0.1, scale: 0.8 }}
+    animate={{ 
+      opacity: [0.1, 0.3, 0.1],
+      scale: [0.8, 1, 0.8]
+    }}
+    transition={{
+      duration: 4,
+      delay,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }}
+  />
+);
+
+const MoonScene = () => {
+  const GLOW_COUNT = 8;
+  
+  const glowRays = Array.from({ length: GLOW_COUNT }, (_, i) => ({
+    id: i,
+    rotation: (i * 360) / GLOW_COUNT,
+    delay: (i * 0.5) % 2
+  }));
+
+  return (
+    <div className="fixed inset-0 hidden dark:block pointer-events-none overflow-hidden">
+      <motion.div 
+        className="absolute right-[15%] top-[15%] w-16 h-16"
+        animate={{
+          scale: [1, 1.05, 1],
+          opacity: [0.8, 0.9, 0.8]
+        }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      >
+        <div className="w-full h-full rounded-full bg-gray-200">
+          <motion.div 
+            className="absolute w-[85%] h-[85%] rounded-full bg-gray-900"
+            style={{
+              top: '5%',
+              right: '-15%'
+            }}
+          />
+        </div>
+        {glowRays.map((ray) => (
+          <MoonGlow key={ray.id} {...ray} />
+        ))}
+      </motion.div>
+    </div>
+  );
+};
+
 const DarkModeToggle = () => {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    // Check system preference on initial load
+    // Check localStorage first, then system preference
+    const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setIsDark(prefersDark);
     
-    if (prefersDark) {
+    if (savedTheme === 'dark' || (savedTheme === null && prefersDark)) {
+      setIsDark(true);
       document.documentElement.classList.add('dark');
+    } else {
+      setIsDark(false);
+      document.documentElement.classList.remove('dark');
     }
+
+    // Listen for system preference changes
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (e: MediaQueryListEvent) => {
+      if (localStorage.getItem('theme') === null) {
+        setIsDark(e.matches);
+      }
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
   }, []);
+
+  const toggleDarkMode = () => {
+    const newIsDark = !isDark;
+    setIsDark(newIsDark);
+    localStorage.setItem('theme', newIsDark ? 'dark' : 'light');
+  };
 
   useEffect(() => {
     if (isDark) {
@@ -58,13 +142,18 @@ const DarkModeToggle = () => {
   }, [isDark]);
 
   return (
-    <button
-      onClick={() => setIsDark(!isDark)}
-      className="fixed top-4 right-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors z-10"
-      aria-label="Toggle dark mode"
-    >
-      {isDark ? '☀️' : '🌙'}
-    </button>
+    <div className="fixed top-4 right-4 flex items-center gap-2 z-10">
+      <span className="text-sm text-gray-600 dark:text-gray-400 hidden sm:inline">
+        {isDark ? 'Dark mode' : 'Light mode'}
+      </span>
+      <button
+        onClick={toggleDarkMode}
+        className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors"
+        aria-label="Toggle dark mode"
+      >
+        {isDark ? '☀️' : '🌙'}
+      </button>
+    </div>
   );
 };
 
@@ -115,6 +204,99 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
   </section>
 );
 
+const Cloud = ({ x, y, scale, delay }: { x: number; y: number; scale: number; delay: number }) => (
+  <motion.path
+    d="M25,60 Q40,45 50,60 Q65,45 75,60 Q85,45 90,60 L90,70 Q75,75 50,70 Q25,75 25,70 Z"
+    className="fill-gray-200"
+    style={{ 
+      transformOrigin: 'center',
+      translateX: x,
+      translateY: y,
+      scale
+    }}
+    initial={{ translateY: y }}
+    animate={{ 
+      translateY: [y - 10, y + 10, y - 10],
+      translateX: [x - 5, x + 5, x - 5]
+    }}
+    transition={{
+      duration: 10,
+      delay,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }}
+  />
+);
+
+const SunRay = ({ rotation, delay }: { rotation: number; delay: number }) => (
+  <motion.div
+    className="absolute w-24 h-1 bg-gradient-to-r from-yellow-300/80 to-transparent"
+    style={{ 
+      transformOrigin: 'left center',
+      rotate: rotation,
+      left: '50%',
+      top: '50%'
+    }}
+    initial={{ opacity: 0.3, scale: 0.8 }}
+    animate={{ 
+      opacity: [0.3, 0.6, 0.3],
+      scale: [0.8, 1.1, 0.8]
+    }}
+    transition={{
+      duration: 3,
+      delay,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }}
+  />
+);
+
+const DayScene = () => {
+  const CLOUD_COUNT = 6;
+  const RAY_COUNT = 12;
+  
+  const clouds = Array.from({ length: CLOUD_COUNT }, (_, i) => ({
+    id: i,
+    x: (i * 200) % window.innerWidth,
+    y: 50 + Math.random() * 100,
+    scale: 0.5 + Math.random() * 0.5,
+    delay: Math.random() * 2
+  }));
+
+  const rays = Array.from({ length: RAY_COUNT }, (_, i) => ({
+    id: i,
+    rotation: (i * 360) / RAY_COUNT,
+    delay: (i * 0.2) % 2
+  }));
+
+  return (
+    <div className="fixed inset-0 block dark:hidden pointer-events-none overflow-hidden">
+      <svg className="w-full h-full">
+        {clouds.map((cloud) => (
+          <Cloud key={cloud.id} {...cloud} />
+        ))}
+      </svg>
+      
+      <motion.div 
+        className="absolute right-[15%] top-[15%] w-20 h-20 rounded-full bg-yellow-400/90"
+        animate={{
+          scale: [1, 1.1, 1],
+          opacity: [0.8, 0.9, 0.8]
+        }}
+        transition={{
+          duration: 4,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      >
+        {rays.map((ray) => (
+          <SunRay key={ray.id} {...ray} />
+        ))}
+      </motion.div>
+    </div>
+  );
+};
+
 const Portfolio = () => {
   const PHOTO_COUNT = 5;
   const photoItems = Array.from({ length: PHOTO_COUNT }, (_, i) => i);
@@ -122,6 +304,8 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
       <StarField />
+      <DayScene />
+      <MoonScene />
       <main className="max-w-3xl mx-auto p-8 font-mono relative">
         <DarkModeToggle />
         <MathWave />
