@@ -1,0 +1,12 @@
+framework: nextjs
+nextjs_version: 14
+uses_typescript: true
+uses_tailwind: true
+uses_react: true
+is_static_export: true
+use_pnpm: true
+use_motion: true
+
+# Coding rules
+Prefer to use constants that are defined on the beginning of the function rather than inline constants
+Prefer readability and simple code over all else
