@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const Star = ({ x, y, delay }: { x: number; y: number; delay: number }) => (
   <motion.div
@@ -32,69 +33,6 @@ const StarField = () => {
       {stars.map((star) => (
         <Star key={star.id} x={star.x} y={star.y} delay={star.delay} />
       ))}
-    </div>
-  );
-};
-
-const MoonGlow = ({ rotation, delay }: { rotation: number; delay: number }) => (
-  <motion.div
-    className="absolute w-16 h-1 bg-gradient-to-r from-blue-100/30 to-transparent"
-    style={{ 
-      transformOrigin: 'left center',
-      rotate: rotation,
-      left: '50%',
-      top: '50%'
-    }}
-    initial={{ opacity: 0.1, scale: 0.8 }}
-    animate={{ 
-      opacity: [0.1, 0.3, 0.1],
-      scale: [0.8, 1, 0.8]
-    }}
-    transition={{
-      duration: 4,
-      delay,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }}
-  />
-);
-
-const MoonScene = () => {
-  const GLOW_COUNT = 8;
-  
-  const glowRays = Array.from({ length: GLOW_COUNT }, (_, i) => ({
-    id: i,
-    rotation: (i * 360) / GLOW_COUNT,
-    delay: (i * 0.5) % 2
-  }));
-
-  return (
-    <div className="fixed inset-0 hidden dark:block pointer-events-none overflow-hidden">
-      <motion.div 
-        className="absolute right-[15%] top-[15%] w-16 h-16"
-        animate={{
-          scale: [1, 1.05, 1],
-          opacity: [0.8, 0.9, 0.8]
-        }}
-        transition={{
-          duration: 5,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      >
-        <div className="w-full h-full rounded-full bg-gray-200">
-          <motion.div 
-            className="absolute w-[85%] h-[85%] rounded-full bg-gray-900"
-            style={{
-              top: '5%',
-              right: '-15%'
-            }}
-          />
-        </div>
-        {glowRays.map((ray) => (
-          <MoonGlow key={ray.id} {...ray} />
-        ))}
-      </motion.div>
     </div>
   );
 };
@@ -204,15 +142,39 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
   </section>
 );
 
+const ImageModal = ({ photo, onClose }: { photo: { src: string; alt: string }; onClose: () => void }) => (
+  <div 
+    className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+    onClick={onClose}
+  >
+    <div className="relative max-w-5xl w-full h-[80vh] rounded-lg overflow-hidden">
+      <Image
+        src={photo.src}
+        alt={photo.alt}
+        width={1200}
+        height={800}
+        className="object-contain w-full h-full grayscale hover:grayscale-0 transition-all duration-300"
+        sizes="90vw"
+        priority
+      />
+    </div>
+  </div>
+);
+
 const Portfolio = () => {
-  const PHOTO_COUNT = 5;
-  const photoItems = Array.from({ length: PHOTO_COUNT }, (_, i) => i);
+  const [selectedPhoto, setSelectedPhoto] = useState<{ src: string; alt: string } | null>(null);
+  const photos = [
+    { src: '/images/archery.jpeg', alt: 'Archery training in Korea' },
+    { src: '/images/practice.jpeg', alt: 'Practice session' },
+    { src: '/images/happy-place.jpeg', alt: 'Happy place' },
+    { src: '/images/yosegi-puzzle.jpeg', alt: 'Yosegi puzzle box' },
+    { src: '/images/tako.jpeg', alt: 'Tako' },
+  ];
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
       <StarField />
-      <MoonScene />
-      <main className="max-w-3xl mx-auto p-8 font-mono relative">
+      <main className="max-w-4xl mx-auto p-8 font-mono relative">
         <DarkModeToggle />
         <MathWave />
         
@@ -273,19 +235,36 @@ const Portfolio = () => {
           </Section>
 
           <section className="mt-16">
-            <div className="grid grid-cols-3 md:grid-cols-5 gap-6">
-              {photoItems.map((i) => (
-                <figure key={i} className="group">
-                  <div 
-                    className="w-full aspect-square bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600 group-hover:from-gray-300 group-hover:to-gray-400 dark:group-hover:from-gray-600 dark:group-hover:to-gray-500 transition-all rounded-lg"
-                  />
-                  <figcaption className="text-xs mt-2 text-gray-600 dark:text-gray-400">[doc_{i+1}.jpg]</figcaption>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+              {photos.map((photo, i) => (
+                <figure 
+                  key={i} 
+                  className="group cursor-pointer"
+                  onClick={() => setSelectedPhoto(photo)}
+                >
+                  <div className="w-full aspect-square relative rounded-lg overflow-hidden">
+                    <Image
+                      src={photo.src}
+                      alt={photo.alt}
+                      width={400}
+                      height={400}
+                      className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-105"
+                      sizes="(max-width: 768px) 45vw, 30vw"
+                      priority={i < 2}
+                    />
+                  </div>
                 </figure>
               ))}
             </div>
           </section>
         </div>
       </main>
+      {selectedPhoto && (
+        <ImageModal 
+          photo={selectedPhoto} 
+          onClose={() => setSelectedPhoto(null)} 
+        />
+      )}
     </div>
   );
 };
