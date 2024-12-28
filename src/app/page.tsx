@@ -230,7 +230,9 @@ const Portfolio = () => {
                   alt={photo.alt}
                   width={400}
                   height={400}
-                  className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-105"
+                  className={`object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-105 ${
+                    photo.src === '/images/archery.jpeg' ? 'object-top' : 'object-center'
+                  }`}
                   sizes="(max-width: 768px) 45vw, 30vw"
                   priority={i < 2}
                 />
