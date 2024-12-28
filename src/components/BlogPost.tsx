@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { MainLayout } from './MainLayout';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
@@ -17,12 +17,18 @@ interface BlogPostProps {
 
 export const BlogPost = ({ children, title, date, readingTime, authorName, authorImage }: BlogPostProps) => {
   useScrollPosition();
+  const [hash, setHash] = useState('');
+
+  useEffect(() => {
+    // Get the hash from the URL when the component mounts
+    setHash(window.location.hash);
+  }, []);
 
   return (
     <MainLayout>
       <div className="mb-8">
         <Link 
-          href="/" 
+          href={`/${hash}`}
           className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
         >
           <span className="mr-2">←</span>
@@ -66,7 +72,7 @@ export const BlogPost = ({ children, title, date, readingTime, authorName, autho
 
         <footer className="not-prose mt-16 pt-8 border-t border-gray-200 dark:border-gray-700">
           <Link 
-            href="/" 
+            href={`/${hash}`}
             className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
           >
             ← Back to home

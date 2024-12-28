@@ -9,18 +9,18 @@ interface Tab {
 
 interface TabsProps {
   tabs: Tab[];
+  activeTab: string;
+  onTabChange: (tabId: string) => void;
 }
 
-export const Tabs = ({ tabs }: TabsProps) => {
-  const [activeTab, setActiveTab] = React.useState(tabs[0].id);
-
+export const Tabs = ({ tabs, activeTab, onTabChange }: TabsProps) => {
   return (
     <div className="w-full">
       <div className="flex space-x-1 mb-8 overflow-x-auto pb-2 scrollbar-hide">
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => onTabChange(tab.id)}
             className={`
               px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap
               ${activeTab === tab.id

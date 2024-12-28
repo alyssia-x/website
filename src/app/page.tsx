@@ -49,6 +49,28 @@ const ImageModal = ({ photo, onClose }: { photo: { src: string; alt: string }; o
 const Portfolio = () => {
   useScrollPosition();
   const [selectedPhoto, setSelectedPhoto] = useState<{ src: string; alt: string } | null>(null);
+  const [activeTab, setActiveTab] = useState('current');
+
+  useEffect(() => {
+    // Get the initial tab from URL hash or default to 'current'
+    const hash = window.location.hash.slice(1);
+    if (hash && tabs.some(tab => tab.id === hash)) {
+      setActiveTab(hash);
+    }
+  }, []);
+
+  const handleTabChange = (tabId: string) => {
+    setActiveTab(tabId);
+    // Use history.pushState to update hash without scrolling
+    history.pushState(null, '', `#${tabId}`);
+  };
+
+  // Function to preserve hash when navigating to blog posts
+  const getBlogUrl = (slug: string) => {
+    const hash = window.location.hash;
+    return `/blog/${slug}${hash}`;
+  };
+
   const photos = [
     { src: '/images/archery.jpeg', alt: 'Archery training in Korea' },
     { src: '/images/practice.jpeg', alt: 'Practice session' },
@@ -134,7 +156,7 @@ const Portfolio = () => {
           {blogPosts.map((post) => (
             <div key={post.slug} className="mb-6">
               <Link 
-                href={`/blog/${post.slug}`}
+                href={getBlogUrl(post.slug)}
                 className="block hover:bg-gray-100 dark:hover:bg-gray-800 p-4 rounded-lg transition-colors"
               >
                 <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
@@ -188,7 +210,11 @@ const Portfolio = () => {
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Hi, I'm Alyssia!</h1>
         </div>
 
-        <Tabs tabs={tabs} />
+        <Tabs 
+          tabs={tabs} 
+          activeTab={activeTab}
+          onTabChange={handleTabChange}
+        />
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12">
           {photos.map((photo, i) => (
