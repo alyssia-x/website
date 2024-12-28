@@ -86,18 +86,18 @@ const Portfolio = () => {
 
   const blogPosts = [
     {
-      title: "Why AI Safety Needs More Science Fiction: Proposing the AI Safety Fiction Challenge",
-      date: "Dec 26, 2024",
-      slug: "ai-safety-fiction-challenge",
-      excerpt: "Exploring how science fiction can contribute to solving AI alignment challenges and proposing a new writing initiative to bridge technical research with imaginative exploration.",
-      readingTime: 7
-    },
-    {
       title: "Beyond ARC: Reimagining Abstract Reasoning Benchmarks for the Next Generation of AI",
       date: "Dec 27, 2024",
       slug: "beyond-arc-abstract-reasoning",
       excerpt: "A deep dive into the evolution of AI benchmarks and what the future holds for testing artificial intelligence.",
       readingTime: 18
+    },
+    {
+      title: "Why AI Safety Needs More Science Fiction: Proposing the AI Safety Fiction Challenge",
+      date: "Dec 26, 2024",
+      slug: "ai-safety-fiction-challenge",
+      excerpt: "Exploring how science fiction can contribute to solving AI alignment challenges and proposing a new writing initiative to bridge technical research with imaginative exploration.",
+      readingTime: 7
     }
   ];
 
