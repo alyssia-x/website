@@ -15,8 +15,8 @@ export const Figure: React.FC<FigureProps> = ({ src, alt, caption, width = 800, 
   const placeholderSrc = PlaceholderImage({ text: src, width, height });
 
   return (
-    <figure className="my-8">
-      <div className="relative w-full p-4">
+    <figure className="my-6">
+      <div className="relative w-full p-2">
         <div className="relative w-full min-h-[200px] h-auto">
           <Image
             src={imgSrc}
@@ -28,7 +28,7 @@ export const Figure: React.FC<FigureProps> = ({ src, alt, caption, width = 800, 
           />
         </div>
       </div>
-      <figcaption className="mt-2 text-sm text-gray-600 dark:text-gray-400 text-center">
+      <figcaption className="text-xs text-gray-600 dark:text-gray-400 text-center">
         {caption}
       </figcaption>
     </figure>

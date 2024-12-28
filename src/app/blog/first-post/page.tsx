@@ -15,49 +15,50 @@ export default function FirstPost() {
     >
       <p>
         There's something deeply fascinating about watching AI models tackle abstract reasoning challenges. 
-        As someone who spent years immersed in the world of quantitative aptitude and abstract reasoning tests—crafting, 
-        solving, and analyzing them—I've observed with keen interest as benchmarks like ARC-AGI have become the latest 
+        As someone who spent years immersed in the world of quantitative aptitude and abstract reasoning tests — crafting, 
+        solving, and analyzing them — I've observed with keen interest as benchmarks like ARC-AGI have become the latest 
         frontier in AI evaluation<a href="#ref-1" className="text-blue-600 dark:text-blue-400 hover:underline"><sup>[1]</sup></a>. But as models like OpenAI's o3 achieve breakthrough performance levels 
         at record pace<a href="#ref-2" className="text-blue-600 dark:text-blue-400 hover:underline"><sup>[2]</sup></a>, we must ask: where do we go from here?
       </p>
 
-      <div className="my-8 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
-        <h2 className="mb-4">Table of Contents</h2>
-        <ul className="space-y-2">
-          <li><a href="#brief-history" className="text-blue-600 dark:text-blue-400 hover:underline">A Brief History</a></li>
-          <li><a href="#evolution" className="text-blue-600 dark:text-blue-400 hover:underline">The Evolution of Abstract Reasoning Assessments and AI Capabilities</a></li>
-          <li><a href="#drawing-inspiration" className="text-blue-600 dark:text-blue-400 hover:underline">Drawing Inspiration from Quantitative Assessment History</a></li>
-          <li><a href="#progressive-development" className="text-blue-600 dark:text-blue-400 hover:underline">The Progressive Development of AI Capabilities</a>
-            <ul className="ml-4 mt-2 space-y-2">
-              <li><a href="#areas-of-strength" className="text-blue-600 dark:text-blue-400 hover:underline">Areas of Strength (Pattern Recognition & Memorization)</a></li>
-              <li><a href="#areas-of-challenge" className="text-blue-600 dark:text-blue-400 hover:underline">Areas of Challenge (Novel Reasoning)</a></li>
+      <div className="mt-32 px-8 py-8 bg-gray-100 dark:bg-gray-800 rounded-lg not-prose">
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Table of Contents</h2>
+        <ul className="space-y-3">
+          <li><a href="#brief-history" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors">A Brief History</a></li>
+          <li><a href="#evolution" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors">The Evolution of Abstract Reasoning Assessments and AI Capabilities</a></li>
+          <li><a href="#drawing-inspiration" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors">Drawing Inspiration from Quantitative Assessment History</a></li>
+          <li><a href="#progressive-development" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors">The Progressive Development of AI Capabilities</a>
+            <ul className="ml-4 mt-2 space-y-2 text-sm">
+              <li><a href="#areas-of-strength" className="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">Areas of Strength (Pattern Recognition & Memorization)</a></li>
+              <li><a href="#areas-of-challenge" className="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">Areas of Challenge (Novel Reasoning)</a></li>
             </ul>
           </li>
-          <li><a href="#three-tier-challenge" className="text-blue-600 dark:text-blue-400 hover:underline">The Three-Tier Challenge Framework</a>
-            <ul className="ml-4 mt-2 space-y-2">
-              <li><a href="#easy-challenges" className="text-blue-600 dark:text-blue-400 hover:underline">1. Easy challenges for humans → Hard for AI</a></li>
-              <li><a href="#moderate-challenges" className="text-blue-600 dark:text-blue-400 hover:underline">2. Moderate challenges for humans → Hard for AI</a></li>
-              <li><a href="#difficult-challenges" className="text-blue-600 dark:text-blue-400 hover:underline">3. Difficult / nearly impossible challenges for humans → Even Harder for AI</a></li>
+          <li><a href="#three-tier-challenge" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors">The Three-Tier Challenge Framework</a>
+            <ul className="ml-4 mt-2 space-y-2 text-sm">
+              <li><a href="#easy-challenges" className="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">1. Easy challenges for humans → Hard for AI</a></li>
+              <li><a href="#moderate-challenges" className="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">2. Moderate challenges for humans → Hard for AI</a></li>
+              <li><a href="#difficult-challenges" className="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">3. Difficult / nearly impossible challenges for humans → Even Harder for AI</a></li>
             </ul>
           </li>
-          <li><a href="#proposal-categories" className="text-blue-600 dark:text-blue-400 hover:underline">3 Proposal Categories for New Evaluation Approaches</a>
-            <ul className="ml-4 mt-2 space-y-2">
-              <li><a href="#dynamic-pattern" className="text-blue-600 dark:text-blue-400 hover:underline">1. Dynamic Pattern Evolution</a></li>
-              <li><a href="#contextual-rule" className="text-blue-600 dark:text-blue-400 hover:underline">2. Contextual Rule Transfer</a></li>
-              <li><a href="#abstract-anomaly" className="text-blue-600 dark:text-blue-400 hover:underline">3. Abstract Anomaly Detection</a></li>
+          <li><a href="#proposal-categories" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors">Three Proposal Categories for New Evaluation Approaches</a>
+            <ul className="ml-4 mt-2 space-y-2 text-sm">
+              <li><a href="#dynamic-pattern" className="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">1. Dynamic Pattern Evolution</a></li>
+              <li><a href="#contextual-rule" className="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">2. Contextual Rule Transfer</a></li>
+              <li><a href="#abstract-anomaly" className="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">3. Abstract Anomaly Detection</a></li>
             </ul>
           </li>
-          <li><a href="#why-this-matters" className="text-blue-600 dark:text-blue-400 hover:underline">Why This Matters Now</a></li>
-          <li><a href="#next-evolution" className="text-blue-600 dark:text-blue-400 hover:underline">The Next Evolution in AI Benchmarks</a></li>
-          <li><a href="#about-author" className="text-blue-600 dark:text-blue-400 hover:underline">About the Author</a></li>
-          <li><a href="#references" className="text-blue-600 dark:text-blue-400 hover:underline">References</a></li>
+          <li><a href="#why-this-matters" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors">Why This Matters Now</a></li>
+          <li><a href="#next-evolution" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors">The Next Evolution in AI Benchmarks</a></li>
+          <li><a href="#about-author" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors">About the Author</a></li>
+          <li><a href="#references" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors">References</a></li>
         </ul>
       </div>
 
-      <h2 id="brief-history" className="mt-24">A Brief History</h2>
+      <br />
+      <h2 id="brief-history" className="mt-32">A Brief History</h2>
       <p>
         In 2019, François Chollet created the Abstraction and Reasoning Corpus (ARC), a novel AI benchmark measuring 
-        general intelligence through abstract visual pattern recognition<a href="#ref-1" className="text-blue-600 dark:text-blue-400 hover:underline"><sup>[1]</sup></a>. Despite all major advancements 
+        general intelligence through abstract visual pattern recognition<a href="#ref-1" className="text-blue-600 dark:text-blue-400 hover:underline"><sup>[1]</sup></a>. Despite major advancements 
         in AI through 2024, ARC remains undefeated by SOTA (state-of-the-art) models, with a $1M prize still unclaimed 
         as of writing<a href="#ref-2" className="text-blue-600 dark:text-blue-400 hover:underline"><sup>[2]</sup></a>.
       </p>
@@ -88,7 +89,8 @@ export default function FirstPost() {
         PhD-level mastery required only months.
       </p>
 
-      <h2 id="evolution" className="mt-24">The Evolution of Abstract Reasoning Assessments and AI Capabilities</h2>
+      <br />
+      <h2 id="evolution" className="mt-32">The Evolution of Abstract Reasoning Assessments and AI Capabilities</h2>
       <p>
         Abstract reasoning assessments have deep roots in cognitive testing, drawing inspiration from established tools 
         that measure problem-solving ability and critical thinking.
@@ -162,12 +164,13 @@ export default function FirstPost() {
         caption="Figure 8: An example of an ARC-AGI benchmark task that challenges o3's performance"
       />
 
-      <h2 id="progressive-development" className="mt-24">The Progressive Development of AI Capabilities</h2>
+      <br />
+      <h2 id="progressive-development" className="mt-32">The Progressive Development of AI Capabilities</h2>
       <p>
       Modern AI systems demonstrate a fascinating progression pattern in their capabilities: rather than exhibiting separate tracks for memorization and reasoning, they demonstrate a sequential learning progression. Like human learners, these systems excel at pattern recognition through repeated exposure before developing broader generalization abilities - a progression that becomes evident when examining their current strengths and challenges:
       </p>
 
-      <h3 id="areas-of-strength" className="mt-16">Areas of Strength (Pattern Recognition & Memorization)</h3>
+      <h3 id="areas-of-strength" className="mt-32">Areas of Strength (Pattern Recognition & Memorization)</h3>
       <ul>
         <li>Professional domain knowledge (reaching 87.7% on PhD-level GPQA questions)</li>
         <li>Mathematical computation on familiar patterns</li>
@@ -175,7 +178,7 @@ export default function FirstPost() {
         <li>Problems that can be solved through pattern matching</li>
       </ul>
 
-      <h3 id="areas-of-challenge" className="mt-16">Areas of Challenge (Novel Reasoning)</h3>
+      <h3 id="areas-of-challenge" className="mt-32">Areas of Challenge (Novel Reasoning)</h3>
       <ul>
         <li>Tasks requiring program synthesis from first principles<a href="#ref-8" className="text-blue-600 dark:text-blue-400 hover:underline"><sup>[8]</sup></a></li>
         <li>Problems with evolving or dynamic rules</li>
@@ -183,7 +186,8 @@ export default function FirstPost() {
         <li>Transfer learning across drastically different contexts</li>
       </ul>
 
-      <h2 id="drawing-inspiration" className="mt-24">Drawing Inspiration from Quantitative Assessment History</h2>
+      <br />
+      <h2 id="drawing-inspiration" className="mt-32">Drawing Inspiration from Quantitative Assessment History</h2>
       <p>
         My experience with CCAT and similar assessments may offer valuable insights here. The most effective questions weren't necessarily 
         the most complex—they were the ones that required novel combinations of reasoning patterns. This aligns with Chollet's 
@@ -191,12 +195,13 @@ export default function FirstPost() {
         problems<a href="#ref-10" className="text-blue-600 dark:text-blue-400 hover:underline"><sup>[10]</sup></a>.
       </p>
 
-      <h2 id="three-tier-challenge" className="mt-24">The Three-Tier Challenge Framework</h2>
+      <br />
+      <h2 id="three-tier-challenge" className="mt-32">The Three-Tier Challenge Framework</h2>
       <p>
         I propose we think about abstract reasoning benchmarks in three tiers of increasing sophistication:
       </p>
 
-      <h3 id="easy-challenges" className="mt-16">1. Easy challenges for humans → Hard for AI (Current Benchmarks)</h3>
+      <h3 id="easy-challenges" className="mt-32">1. Easy challenges for humans → Hard for AI (Current Benchmarks)</h3>
       <p>
         Where ARC-AGI sits today, though rapidly being mastered by advanced systems through sophisticated pattern 
         matching and compute-intensive approaches<a href="#ref-3" className="text-blue-600 dark:text-blue-400 hover:underline"><sup>[3]</sup></a>. This represents very simple reasoning for humans.
@@ -220,7 +225,7 @@ export default function FirstPost() {
         challenging for AI<a href="#ref-3" className="text-blue-600 dark:text-blue-400 hover:underline"><sup>[3]</sup></a>.
       </p>
 
-      <h3 id="moderate-challenges" className="mt-16">2. Moderate challenges for humans → Hard for AI (CCAT-Inspired Benchmarks)</h3>
+      <h3 id="moderate-challenges" className="mt-32">2. Moderate challenges for humans → Hard for AI (CCAT-Inspired Benchmarks)</h3>
       <p>
         Parts of traditional quantitative aptitude tests that challenge both human experts and AI systems, requiring 
         sophisticated multi-modal reasoning.
@@ -239,7 +244,7 @@ export default function FirstPost() {
         <li>Problems where the rule itself must be inferred from a set of examples and then applied in a novel context</li>
       </ul>
 
-      <h3 id="difficult-challenges" className="mt-16">3. Difficult / nearly impossible challenges for humans → Even Harder for AI</h3>
+      <h3 id="difficult-challenges" className="mt-32">3. Difficult / nearly impossible challenges for humans → Even Harder for AI</h3>
       <p>
         Problems designed to probe true reasoning, incorporating Chollet's insights about program synthesis and abstraction.
       </p>
@@ -282,9 +287,10 @@ export default function FirstPost() {
         Of course, what constitutes "Hard for AI" will evolve as AI capabilities advance.
       </p>
 
-      <h2 id="proposal-categories" className="mt-24">3 Proposal Categories for New Evaluation Approaches</h2>
+      <br />
+      <h2 id="proposal-categories" className="mt-32">Three Proposal Categories for New Evaluation Approaches</h2>
       
-      <h3 id="dynamic-pattern" className="mt-16">1. Dynamic Pattern Evolution</h3>
+      <h3 id="dynamic-pattern" className="mt-32">1. Dynamic Pattern Evolution</h3>
       <p>
         Instead of static pattern completion tasks, we can create problems where the underlying rules evolve as the solution 
         progresses. This would test not just pattern recognition but the kind of program synthesis capability that Chollet 
@@ -297,7 +303,7 @@ export default function FirstPost() {
         <li>Puzzles that require non-linear transformations to be solved like fractal recursions</li>
       </ul>
 
-      <h3 id="contextual-rule" className="mt-16">2. Contextual Rule Transfer</h3>
+      <h3 id="contextual-rule" className="mt-32">2. Contextual Rule Transfer</h3>
       <p>
         Develop problems that require applying learned patterns in radically different contexts, challenging the current 
         limitations of transformer-based models in handling novel situations<a href="#ref-10" className="text-blue-600 dark:text-blue-400 hover:underline"><sup>[10]</sup></a>.
@@ -312,7 +318,7 @@ export default function FirstPost() {
         <li>Translating computer vision techniques to audio processing</li>
       </ul>
 
-      <h3 id="abstract-anomaly" className="mt-16">3. Abstract Anomaly Detection</h3>
+      <h3 id="abstract-anomaly" className="mt-32">3. Abstract Anomaly Detection</h3>
       <p>
         Create sequences where the challenge isn't just completing the pattern but identifying subtle violations of 
         established rules—probing the boundary between memorized patterns and true understanding.
@@ -325,7 +331,8 @@ export default function FirstPost() {
         </li>
       </ul>
 
-      <h2 id="why-this-matters" className="mt-24">Why This Matters Now</h2>
+      <br />
+      <h2 id="why-this-matters" className="mt-32">Why This Matters Now</h2>
       <p>
         The landscape of AI capabilities is evolving rapidly, as demonstrated by o3's breakthrough performance. However, 
         this progress also reveals the limitations of current approaches<a href="#ref-12" className="text-blue-600 dark:text-blue-400 hover:underline"><sup>[12]</sup></a>. As Chollet argues, we need to move beyond pure 
@@ -343,7 +350,8 @@ export default function FirstPost() {
         really wild to me."<a href="#ref-13" className="text-blue-600 dark:text-blue-400 hover:underline"><sup>[13]</sup></a> That capability threshold, alongside many others, was quickly surpassed.
       </p>
 
-      <h2 id="next-evolution" className="mt-24">The Next Evolution in AI Benchmarks</h2>
+      <br />
+      <h2 id="next-evolution" className="mt-32">The Next Evolution in AI Benchmarks</h2>
       <p>
         The future of AI evaluation lies not just in making problems harder, but in creating benchmarks that specifically 
         probe the boundary between pattern matching and true reasoning, and eventually, just true reasoning<a href="#ref-13" className="text-blue-600 dark:text-blue-400 hover:underline"><sup>[13]</sup></a>. As o3's 
@@ -357,8 +365,6 @@ export default function FirstPost() {
         by clearly distinguishing between memorized skill and true reasoning ability.
       </p>
 
-      <hr className="my-8" />
-
       <div className="not-prose bg-gray-50 dark:bg-gray-800/50 rounded-xl p-6 my-8">
         <div className="flex items-start gap-6">
           <img 
@@ -368,7 +374,7 @@ export default function FirstPost() {
           />
           <div>
             <h2 id="about-author" className="text-2xl font-bold text-gray-900 dark:text-white mb-4">About the Author</h2>
-            <p className="text-gray-700 dark:text-gray-300">
+            <p className="text-sm text-gray-700 dark:text-gray-300">
               Alyssia is an engineer and independent researcher currently doing evaluation and benchmarking work for the UK AI 
               Safety Institute. With previous experience at Google and Microsoft, she led Team Canada to 3rd place out of 18,000 
               teams at the International Quant Championships in Singapore. Her background combines practical engineering experience 
@@ -382,7 +388,8 @@ export default function FirstPost() {
 
       <hr className="my-8" />
 
-      <h2 id="references" className="mt-24">References</h2>
+      <br />
+      <h2 id="references" className="mt-32">References</h2>
       <ol className="list-decimal list-inside">
         <li id="ref-1">Chollet, F. (2019). The Abstract Reasoning Corpus (ARC): A Novel Benchmark for General AI. arXiv:1911.01547.</li>
         <li id="ref-2">ARC Prize. (2024). <a href="https://arcprize.org/" className="text-blue-600 dark:text-blue-400 hover:underline">https://arcprize.org/</a></li>
