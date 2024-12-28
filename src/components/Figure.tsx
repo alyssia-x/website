@@ -16,15 +16,17 @@ export const Figure: React.FC<FigureProps> = ({ src, alt, caption, width = 800, 
 
   return (
     <figure className="my-8">
-      <div className="relative w-full aspect-[2/1] bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
-        <Image
-          src={imgSrc}
-          alt={alt}
-          width={width}
-          height={height}
-          className="object-contain"
-          onError={() => setImgSrc(placeholderSrc)}
-        />
+      <div className="relative w-full p-4">
+        <div className="relative w-full min-h-[200px] h-auto">
+          <Image
+            src={imgSrc}
+            alt={alt}
+            width={width}
+            height={height}
+            className="object-contain w-full h-auto"
+            onError={() => setImgSrc(placeholderSrc)}
+          />
+        </div>
       </div>
       <figcaption className="mt-2 text-sm text-gray-600 dark:text-gray-400 text-center">
         {caption}
