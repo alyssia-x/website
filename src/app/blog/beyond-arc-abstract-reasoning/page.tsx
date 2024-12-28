@@ -1,12 +1,7 @@
-'use client';
-
 import React from 'react';
 import { BlogPost } from '@/components/BlogPost';
 import { Figure } from '@/components/Figure';
 import Link from 'next/link';
-import { metadata } from './metadata';
-
-export { metadata };
 
 export default function BeyondArcPost() {
   return (

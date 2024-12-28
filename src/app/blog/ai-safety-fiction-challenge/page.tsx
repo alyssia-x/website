@@ -1,11 +1,6 @@
-'use client';
-
 import React from 'react';
 import { BlogPost } from '@/components/BlogPost';
 import Link from 'next/link';
-import { metadata } from './metadata';
-
-export { metadata };
 
 export default function AISafetyFictionPost() {
   return (
