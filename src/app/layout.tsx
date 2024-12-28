@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'Alyssia Jovellanos',
     images: [
       {
-        url: '/images/blog/aly-headshot.png',
+        url: '/images/a-archery.png',
         width: 800,
         height: 800,
         alt: 'Alyssia Jovellanos',
