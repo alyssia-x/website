@@ -7,6 +7,7 @@ import { MainLayout } from '@/components/MainLayout';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { formatReadingTime } from '@/utils/readingTime';
 import { Tabs } from '@/components/Tabs';
+import { AudioPlayer } from '@/components/AudioPlayer';
 
 const Section = ({ children }: { children: React.ReactNode }) => (
   <div className="space-y-2 text-gray-700 dark:text-gray-300">
@@ -145,7 +146,7 @@ const Portfolio = () => {
           • Diving (advanced open water)<br/>
           • Personal color analysis (certified in both Western and Korean color theory - can consult on request!)<br/>
           • Reading<br/>
-          • Music production & singing - currently working on <a href="/audio/hold-on-we're-going-home-ally.m4a" className="text-blue-600 dark:text-blue-400 hover:underline">this</a> cover!<br/>
+          • Music production & singing - currently working on <Link href="/audio/hold-on-were-going-home-ally" className="text-blue-600 dark:text-blue-400 hover:underline">this</Link> cover!<br/>
           • Almost competed against Magnus Carlsen (4x world chess champion)<br/>
           • Canadian<br/>
           • Known for frequent laughter :)
