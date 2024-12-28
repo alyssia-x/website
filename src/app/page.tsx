@@ -167,14 +167,11 @@ const Portfolio = () => {
                 <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
                   {post.title}
                 </h3>
-                <div className="flex items-center space-x-4 text-sm text-gray-600 dark:text-gray-400 mb-2">
+                <div className="flex items-center space-x-4 text-sm text-gray-600 dark:text-gray-400">
                   <time>{post.date}</time>
                   <span>·</span>
                   <span>{formatReadingTime(post.readingTime)}</span>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300">
-                  {post.excerpt}
-                </p>
               </Link>
             </div>
           ))}
