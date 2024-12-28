@@ -20,7 +20,6 @@ export const BlogPost = ({ children, title, date, readingTime, authorName, autho
   const [hash, setHash] = useState('');
 
   useEffect(() => {
-    // Get the hash from the URL when the component mounts
     if (typeof window !== 'undefined') {
       setHash(window.location.hash);
     }
@@ -33,18 +32,16 @@ export const BlogPost = ({ children, title, date, readingTime, authorName, autho
       <div className="mb-8">
         <Link 
           href={backLink}
-          className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+          className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline hover:no-underline transition-colors"
         >
           <span className="mr-2">←</span>
           Back to home
         </Link>
       </div>
       
-      <article className="prose dark:prose-invert prose-gray lg:prose-lg max-w-none">
+      <article className="prose prose-lg dark:prose-invert max-w-none">
         <header className="not-prose mb-12 border-b border-gray-200 dark:border-gray-700 pb-8">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            {title}
-          </h1>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{title}</h1>
           {(authorName || authorImage) && (
             <div className="flex items-center space-x-4 mb-4">
               {authorImage && (
@@ -70,14 +67,12 @@ export const BlogPost = ({ children, title, date, readingTime, authorName, autho
           </div>
         </header>
         
-        <div className="space-y-6 text-gray-700 dark:text-gray-300">
-          {children}
-        </div>
+        {children}
 
         <footer className="not-prose mt-16 pt-8 border-t border-gray-200 dark:border-gray-700">
           <Link 
             href={backLink}
-            className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+            className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline hover:no-underline transition-colors"
           >
             ← Back to home
           </Link>

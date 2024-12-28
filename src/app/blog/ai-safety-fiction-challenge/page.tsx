@@ -35,16 +35,16 @@ export default function AISafetyFictionPost() {
         and corrigibility in ways that resonate with both researchers and the public.
       </p>
 
-      <h2 className="text-2xl font-bold mt-12 mb-6">Presenting: The AI Safety Fiction Challenge</h2>
+      <h2 id="challenge">Presenting: The AI Safety Fiction Challenge</h2>
       <p>
-        Taking inspiration from initiatives like <a href="https://www.asimov.press/p/homeworld-ideas" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">Asimov Press's recent biology writing challenge</a>, I believe we need something 
+        Taking inspiration from initiatives like <a href="https://www.asimov.press/p/homeworld-ideas" target="_blank" rel="noopener noreferrer" className="blue-link">Asimov Press's recent biology writing challenge</a>, I believe we need something 
         similar for AI safety. Imagine a writing contest that brings together technical researchers, science fiction authors, 
         and anyone interested in the future of AI alignment. The goal? To generate fresh perspectives and novel approaches to 
         AI safety through a narrative lens.
       </p>
 
       <p>We could seek stories that:</p>
-      <ul className="list-disc pl-6 space-y-2">
+      <ul>
         <li>Explore novel approaches to AI alignment</li>
         <li>Consider the human element in AI safety</li>
         <li>Present unexpected solutions or perspectives</li>
@@ -57,7 +57,7 @@ export default function AISafetyFictionPost() {
         might even be developed into thought experiments or case studies for researchers.
       </p>
 
-      <h2 className="text-2xl font-bold mt-12 mb-6">Why This Matters</h2>
+      <h2 id="why-matters">Why This Matters</h2>
       <p>
         Ideas can change the world, but too often they remain trapped in academic papers or technical discussions. Science fiction 
         allows us to experiment with alignment strategies that would be too risky to test in reality. Through story, we can 
@@ -68,7 +68,7 @@ export default function AISafetyFictionPost() {
         in tomorrow's stories.
       </p>
 
-      <h2 className="text-2xl font-bold mt-12 mb-6">Building a Bridge to New Talent</h2>
+      <h2 id="bridge">Building a Bridge to New Talent</h2>
       <p>
         One of the most compelling benefits of this initiative lies in its potential to attract fresh minds to the field of AI 
         safety. Technical papers and mathematical proofs, while crucial, can create a high barrier to entry that may deter 
@@ -93,7 +93,7 @@ export default function AISafetyFictionPost() {
         breakthrough solutions in AI safety might require insights from multiple disciplines.
       </p>
 
-      <h2 className="text-2xl font-bold mt-12 mb-6">Charting the Path Forward</h2>
+      <h2 id="path-forward">Charting the Path Forward</h2>
       <p>
         The future of AI safety might not emerge solely from laboratories and laptops. It might spring from the pages of stories 
         that dare to imagine not just what AI could do, but what it could be. In blending rigorous technical understanding with 
@@ -119,14 +119,14 @@ export default function AISafetyFictionPost() {
             className="w-24 h-24 rounded-full object-cover flex-shrink-0"
           />
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">About the Author</h2>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+            <h2>About the Author</h2>
+            <p>
               Alyssia is an engineer and independent researcher currently doing evaluation and benchmarking work for the UK AI 
               Safety Institute. With previous experience at Google and Microsoft, she led Team Canada to 3rd place out of 18,000 
               teams at the International Quant Championships in Singapore. Her background combines practical engineering experience 
               with expertise in quantitative assessment and AI evaluation/benchmarking. She also develops premium coding datasets 
               to train advanced code models. If you're interested in collaborating, discussing these topics, or accessing premium 
-              coding datasets, you can reach out to her <Link href="/?tab=contact" className="text-blue-600 dark:text-blue-400 hover:underline">here</Link>.
+              coding datasets, you can reach out to her <Link href="/?tab=contact" className="blue-link">here</Link>.
             </p>
           </div>
         </div>
