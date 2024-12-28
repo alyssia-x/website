@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { MainLayout } from '@/components/MainLayout';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
+import { formatReadingTime } from '@/utils/readingTime';
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
   <section className="mb-12 hover:bg-gray-50 dark:hover:bg-gray-800 p-4 rounded-lg transition-colors">
@@ -60,10 +61,11 @@ const Portfolio = () => {
 
   const blogPosts = [
     {
-      title: "My First Blog Post",
-      date: "December 1, 2023",
+      title: "Beyond ARC: Reimagining Abstract Reasoning Benchmarks for the Next Generation of AI",
+      date: "Dec 24, 2024",
       slug: "first-post",
-      excerpt: "A sample blog post demonstrating the styling and structure."
+      excerpt: "A deep dive into the evolution of AI benchmarks and what the future holds for testing artificial intelligence.",
+      readingTime: 11
     }
   ];
 
@@ -121,9 +123,11 @@ const Portfolio = () => {
                 <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
                   {post.title}
                 </h3>
-                <time className="text-sm text-gray-600 dark:text-gray-400 mb-2 block">
-                  {post.date}
-                </time>
+                <div className="flex items-center space-x-4 text-sm text-gray-600 dark:text-gray-400 mb-2">
+                  <time>{post.date}</time>
+                  <span>·</span>
+                  <span>{formatReadingTime(post.readingTime)}</span>
+                </div>
                 <p className="text-gray-700 dark:text-gray-300">
                   {post.excerpt}
                 </p>

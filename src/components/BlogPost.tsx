@@ -4,14 +4,16 @@ import React from 'react';
 import Link from 'next/link';
 import { MainLayout } from './MainLayout';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
+import { formatReadingTime } from '@/utils/readingTime';
 
 interface BlogPostProps {
   children: React.ReactNode;
   title: string;
   date: string;
+  readingTime: number;
 }
 
-export const BlogPost = ({ children, title, date }: BlogPostProps) => {
+export const BlogPost = ({ children, title, date, readingTime }: BlogPostProps) => {
   useScrollPosition();
 
   return (
@@ -31,9 +33,11 @@ export const BlogPost = ({ children, title, date }: BlogPostProps) => {
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
             {title}
           </h1>
-          <time className="text-gray-600 dark:text-gray-400 text-sm">
-            {date}
-          </time>
+          <div className="flex items-center space-x-4 text-sm text-gray-600 dark:text-gray-400">
+            <time>{date}</time>
+            <span>·</span>
+            <span>{formatReadingTime(readingTime)}</span>
+          </div>
         </header>
         
         <div className="space-y-6 text-gray-700 dark:text-gray-300">
