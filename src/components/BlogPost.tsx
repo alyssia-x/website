@@ -21,14 +21,18 @@ export const BlogPost = ({ children, title, date, readingTime, authorName, autho
 
   useEffect(() => {
     // Get the hash from the URL when the component mounts
-    setHash(window.location.hash);
+    if (typeof window !== 'undefined') {
+      setHash(window.location.hash);
+    }
   }, []);
+
+  const backLink = `/${hash}`;
 
   return (
     <MainLayout>
       <div className="mb-8">
         <Link 
-          href={`/${hash}`}
+          href={backLink}
           className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
         >
           <span className="mr-2">←</span>
@@ -72,7 +76,7 @@ export const BlogPost = ({ children, title, date, readingTime, authorName, autho
 
         <footer className="not-prose mt-16 pt-8 border-t border-gray-200 dark:border-gray-700">
           <Link 
-            href={`/${hash}`}
+            href={backLink}
             className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
           >
             ← Back to home

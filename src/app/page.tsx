@@ -53,21 +53,25 @@ const Portfolio = () => {
 
   useEffect(() => {
     // Get the initial tab from URL hash or default to 'current'
-    const hash = window.location.hash.slice(1);
-    if (hash && tabs.some(tab => tab.id === hash)) {
-      setActiveTab(hash);
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash.slice(1);
+      if (hash && tabs.some(tab => tab.id === hash)) {
+        setActiveTab(hash);
+      }
     }
   }, []);
 
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
-    // Use history.pushState to update hash without scrolling
-    history.pushState(null, '', `#${tabId}`);
+    if (typeof window !== 'undefined') {
+      // Use history.pushState to update hash without scrolling
+      history.pushState(null, '', `#${tabId}`);
+    }
   };
 
   // Function to preserve hash when navigating to blog posts
   const getBlogUrl = (slug: string) => {
-    const hash = window.location.hash;
+    const hash = typeof window !== 'undefined' ? window.location.hash : '';
     return `/blog/${slug}${hash}`;
   };
 
