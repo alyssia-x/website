@@ -185,9 +185,6 @@ const Portfolio = () => {
       label: 'Contact',
       content: (
         <Section>
-          <a href="https://x.com/alyssiajovella" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
-            • [Twitter]
-          </a>
           <br/>
           <a href="mailto:alyssia.jovellanos@gmail.com" className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
             • [Email]
