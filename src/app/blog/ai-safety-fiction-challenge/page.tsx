@@ -3,8 +3,11 @@
 import React from 'react';
 import { BlogPost } from '@/components/BlogPost';
 import Link from 'next/link';
+import { metadata } from './metadata';
 
-export default function SecondPost() {
+export { metadata };
+
+export default function AISafetyFictionPost() {
   return (
     <BlogPost
       title="Why AI Safety Needs More Science Fiction: Proposing the AI Safety Fiction Challenge"

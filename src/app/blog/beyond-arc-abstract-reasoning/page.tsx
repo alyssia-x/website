@@ -4,8 +4,11 @@ import React from 'react';
 import { BlogPost } from '@/components/BlogPost';
 import { Figure } from '@/components/Figure';
 import Link from 'next/link';
+import { metadata } from './metadata';
 
-export default function FirstPost() {
+export { metadata };
+
+export default function BeyondArcPost() {
   return (
     <BlogPost
       title="Beyond ARC: Reimagining Abstract Reasoning Benchmarks for the Next Generation of AI"
