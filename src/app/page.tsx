@@ -6,14 +6,12 @@ import Link from 'next/link';
 import { MainLayout } from '@/components/MainLayout';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { formatReadingTime } from '@/utils/readingTime';
+import { Tabs } from '@/components/Tabs';
 
-const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
-  <section className="mb-12 hover:bg-gray-50 dark:hover:bg-gray-800 p-4 rounded-lg transition-colors">
-    <h2 className="text-lg font-bold mb-4 text-gray-800 dark:text-gray-200">{title}</h2>
-    <div className="pl-4 space-y-2 text-gray-700 dark:text-gray-300">
-      {children}
-    </div>
-  </section>
+const Section = ({ children }: { children: React.ReactNode }) => (
+  <div className="space-y-2 text-gray-700 dark:text-gray-300">
+    {children}
+  </div>
 );
 
 const ImageModal = ({ photo, onClose }: { photo: { src: string; alt: string }; onClose: () => void }) => {
@@ -57,28 +55,32 @@ const Portfolio = () => {
     { src: '/images/happy-place.jpeg', alt: 'Happy place' },
     { src: '/images/yosegi-puzzle.jpeg', alt: 'Yosegi puzzle box' },
     { src: '/images/tako.jpeg', alt: 'Tako' },
+    { src: '/images/cubesat-render.png', alt: 'CubeSat Render' },
   ];
 
   const blogPosts = [
+    {
+      title: "Why AI Safety Needs More Science Fiction: Proposing the AI Safety Fiction Challenge",
+      date: "Dec 26, 2024",
+      slug: "second-post",
+      excerpt: "Exploring how science fiction can contribute to solving AI alignment challenges and proposing a new writing initiative to bridge technical research with imaginative exploration.",
+      readingTime: 7
+    },
     {
       title: "Beyond ARC: Reimagining Abstract Reasoning Benchmarks for the Next Generation of AI",
       date: "Dec 24, 2024",
       slug: "first-post",
       excerpt: "A deep dive into the evolution of AI benchmarks and what the future holds for testing artificial intelligence.",
-      readingTime: 11
+      readingTime: 18
     }
   ];
 
-  return (
-    <MainLayout>
-      <h1 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">About</h1>
-      
-      <div className="space-y-8">
-        <p className="text-xl text-gray-700 dark:text-gray-300 mb-12">
-          Hi! I'm Alyssia
-        </p>
-
-        <Section title="[Current]">
+  const tabs = [
+    {
+      id: 'current',
+      label: 'Current',
+      content: (
+        <Section>
           • Independent AI Researcher<br/>
           • UK AI Safety Institute - building dangerous capability evaluations<br/>
           • International Space Station, Deep Space Biology & MD Anderson Cancer Center - T-Cell Microgravity Research<br/>
@@ -87,8 +89,13 @@ const Portfolio = () => {
           • Olympic Recurve Archery (aiming for 2028/2032 olympics!)<br/>
           • Annual charity payloads w/ SpaceX - engraving names & dreams of cancer patients on space missions
         </Section>
-
-        <Section title="[Some former lives]">
+      ),
+    },
+    {
+      id: 'former',
+      label: 'Former',
+      content: (
+        <Section>
           • Various contract roles & advisory<br/>  
           • YC W21, 2021 Interact Fellowship<br/>
           • Microsoft - Federated Learning / Personalization<br/>
@@ -100,8 +107,13 @@ const Portfolio = () => {
           • Computing education initiatives in low-income neighborhoods<br/>
           • Miss Universe Canada
         </Section>
-
-        <Section title="[Other random things / interests]">
+      ),
+    },
+    {
+      id: 'other',
+      label: 'Other',
+      content: (
+        <Section>
           • Olympic recurve archery (I usually train in Korea!)<br/>
           • Pilates (certified beginner/intermediate instructor)<br/>
           • Diving (advanced open water)<br/>
@@ -112,8 +124,13 @@ const Portfolio = () => {
           • Canadian<br/>
           • Known for frequent laughter :)
         </Section>
-
-        <Section title="[Blog]">
+      ),
+    },
+    {
+      id: 'blog',
+      label: 'Blog',
+      content: (
+        <Section>
           {blogPosts.map((post) => (
             <div key={post.slug} className="mb-6">
               <Link 
@@ -135,8 +152,13 @@ const Portfolio = () => {
             </div>
           ))}
         </Section>
-
-        <Section title="[Contact]">
+      ),
+    },
+    {
+      id: 'contact',
+      label: 'Contact',
+      content: (
+        <Section>
           <a href="https://x.com/alyssiajovella" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
             • [Twitter]
           </a>
@@ -145,30 +167,50 @@ const Portfolio = () => {
             • [Email]
           </a>
         </Section>
+      ),
+    },
+  ];
 
-        <section className="mt-16">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {photos.map((photo, i) => (
-              <figure 
-                key={i} 
-                className="group cursor-pointer"
-                onClick={() => setSelectedPhoto(photo)}
-              >
-                <div className="w-full aspect-square relative rounded-lg overflow-hidden">
-                  <Image
-                    src={photo.src}
-                    alt={photo.alt}
-                    width={400}
-                    height={400}
-                    className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-105"
-                    sizes="(max-width: 768px) 45vw, 30vw"
-                    priority={i < 2}
-                  />
-                </div>
-              </figure>
-            ))}
+  return (
+    <MainLayout>
+      <div className="space-y-12">
+        <div className="flex items-center gap-6 mb-8">
+          <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
+            <Image
+              src="/images/blog/aly-headshot.png"
+              alt="Alyssia Jovellanos"
+              width={80}
+              height={80}
+              className="w-full h-full object-cover"
+              priority
+            />
           </div>
-        </section>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Hi, I'm Alyssia!</h1>
+        </div>
+
+        <Tabs tabs={tabs} />
+
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12">
+          {photos.map((photo, i) => (
+            <figure 
+              key={i} 
+              className="group cursor-pointer"
+              onClick={() => setSelectedPhoto(photo)}
+            >
+              <div className="w-full aspect-square relative rounded-lg overflow-hidden">
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  width={400}
+                  height={400}
+                  className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-105"
+                  sizes="(max-width: 768px) 45vw, 30vw"
+                  priority={i < 2}
+                />
+              </div>
+            </figure>
+          ))}
+        </div>
       </div>
 
       {selectedPhoto && (

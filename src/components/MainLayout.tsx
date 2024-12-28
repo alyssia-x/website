@@ -23,7 +23,7 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
       style={{ minHeight }}
     >
       <StarField />
-      <main className="max-w-4xl mx-auto p-8 font-mono relative">
+      <main className="max-w-4xl mx-auto p-8 relative">
         <DarkModeToggle />
         <MathWave />
         {children}

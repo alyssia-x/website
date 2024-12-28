@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const mono = JetBrains_Mono({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-mono",
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${mono.variable} antialiased`}>
+      <body className={`${montserrat.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>

@@ -3,13 +3,14 @@
 import React from 'react';
 import { BlogPost } from '@/components/BlogPost';
 import { Figure } from '@/components/Figure';
+import Link from 'next/link';
 
 export default function FirstPost() {
   return (
     <BlogPost
       title="Beyond ARC: Reimagining Abstract Reasoning Benchmarks for the Next Generation of AI"
       date="Dec 24, 2024"
-      readingTime={11}
+      readingTime={18}
       authorName="Alyssia Jovellanos"
       authorImage="/images/blog/aly-headshot.png"
     >
@@ -380,7 +381,7 @@ export default function FirstPost() {
               teams at the International Quant Championships in Singapore. Her background combines practical engineering experience 
               with expertise in quantitative assessment and AI evaluation/benchmarking. She also develops premium coding datasets 
               to train advanced code models. If you're interested in collaborating, discussing these topics, or accessing premium 
-              coding datasets, you can reach out to her here.
+              coding datasets, you can reach out to her <Link href="/?tab=contact" className="text-blue-600 dark:text-blue-400 hover:underline">here</Link>.
             </p>
           </div>
         </div>
