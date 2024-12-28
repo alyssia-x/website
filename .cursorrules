@@ -7,6 +7,20 @@ is_static_export: true
 use_pnpm: true
 use_motion: true
 
+# Chain fo thought
+- Before beginning, think if a specific package exist that will be easier than reimplementing existing code
+
+# Blog Post Guidelines
+- Each blog post should be in its own directory under src/app/blog/
+- Use the BlogPost component for consistent styling
+- Follow the heading hierarchy (h1 for title, h2 for sections, h3 for subsections)
+- Use appropriate semantic HTML elements (blockquote, ul/li, em, strong)
+- Maintain dark/light theme compatibility
+- Include a date for each post
+- Keep paragraphs concise and focused
+- Use lists for enumerated points
+- Include proper spacing between sections
+
 # Coding rules
 Prefer to use constants that are defined on the beginning of the function rather than inline constants
 Prefer readability and simple code over all else
