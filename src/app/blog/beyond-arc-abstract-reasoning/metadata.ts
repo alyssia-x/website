@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     siteName: 'Alyssia Jovellanos',
     locale: 'en_US',
     type: 'article',
-    publishedTime: '2024-12-24T00:00:00.000Z',
+    publishedTime: '2024-12-27T00:00:00.000Z',
     authors: ['Alyssia Jovellanos'],
   },
   twitter: {

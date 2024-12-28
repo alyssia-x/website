@@ -7,7 +7,7 @@ export default function BeyondArcPost() {
   return (
     <BlogPost
       title="Beyond ARC: Reimagining Abstract Reasoning Benchmarks for the Next Generation of AI"
-      date="Dec 24, 2024"
+      date="Dec 27, 2024"
       readingTime={18}
       authorName="Alyssia Jovellanos"
       authorImage="/images/blog/aly-headshot.png"

@@ -94,7 +94,7 @@ const Portfolio = () => {
     },
     {
       title: "Beyond ARC: Reimagining Abstract Reasoning Benchmarks for the Next Generation of AI",
-      date: "Dec 24, 2024",
+      date: "Dec 27, 2024",
       slug: "beyond-arc-abstract-reasoning",
       excerpt: "A deep dive into the evolution of AI benchmarks and what the future holds for testing artificial intelligence.",
       readingTime: 18
