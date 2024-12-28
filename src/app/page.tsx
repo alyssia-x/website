@@ -111,7 +111,7 @@ const Portfolio = () => {
           • UK AI Safety Institute - building dangerous capability evaluations<br/>
           • International Space Station, Deep Space Biology & MD Anderson Cancer Center - T-Cell Microgravity Research<br/>
           • NASA Multi-Omics & AI/ML Analysis Working Group<br/>
-          • Oxford ARBOx<br/>
+          • Incoming: Oxford Alignment Research Bootcamp<br/>
           • Olympic Recurve Archery (aiming for 2028/2032 olympics!)<br/>
           • Annual charity payloads w/ SpaceX - engraving names & dreams of cancer patients on space missions
         </Section>
