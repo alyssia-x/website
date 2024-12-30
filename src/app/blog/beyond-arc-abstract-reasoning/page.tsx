@@ -238,27 +238,26 @@ export default function BeyondArcPost() {
         <li>Problems where the rule itself must be inferred from a set of examples and then applied in a novel context</li>
       </ul>
 
-      <h3 id="difficult-challenges">3. Difficult / nearly impossible challenges for humans → Even Harder for AI</h3>
+      <h3 id="difficult-challenges">3. Difficult / nearly impossible challenges for humans → Even Harder for AI (Next Generation: Currently <a href="#https://en.wikipedia.org/wiki/Lists_of_unsolved_problems" className="text-blue-600 dark:text-blue-400 hover:underline">unsolved problems</a> or recently solved "unsolved" problems) </h3>
       <p>
-        Problems designed to probe true reasoning, incorporating Chollet's insights about program synthesis and abstraction.
-      </p>
+        Problems designed to probe true reasoning, incorporating Chollet's insights about program synthesis and abstraction.</p>
 
+        <Figure 
+        src="/images/blog/riemann.png"
+        alt="The Riemann Hypothesis visualization"
+        caption="Figure 11: The Riemann Hypothesis remains unsolved"
+      />
+
+        <p>Examples in this category can include:</p>
+      <ul>
+        <li>Unsolved problems: the Reimann hypothesis, P vs NP, the general problem of program synthesis from natural language specifications</li>
+        <li>Recently solved "unsolved" problems: the Conway knot problem (solved in 2020), the Cap Set Problem (solved in 2016) </li>
+      </ul>
+      
       <Figure 
         src="/images/blog/cap-set.png"
         alt="The Cap Set Problem visualization"
-        caption="Figure 11: A reference to a recently solved 'unsolved' problem called the Cap Set Problem (solved in 2016)"
-      />
-
-      <p>
-        Another recently solved "unsolved" problem can be the Conway knot problem (solved in 2020).
-        Current unsolved problems can include the Riemann Hypothesis, P vs NP, and the general problem of program synthesis 
-        from natural language specifications.
-      </p>
-
-      <Figure 
-        src="/images/blog/riemann.png"
-        alt="The Riemann Hypothesis visualization"
-        caption="Figure 12: The Riemann Hypothesis remains unsolved"
+        caption="Figure 12: A reference to a recently solved 'unsolved' problem called the Cap Set Problem (solved in 2016)"
       />
 
       <p className="font-bold italic">

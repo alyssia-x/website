@@ -83,6 +83,9 @@ const Portfolio = () => {
     { src: '/images/yosegi-puzzle.jpeg', alt: 'Yosegi puzzle box' },
     { src: '/images/tako.jpeg', alt: 'Tako' },
     { src: '/images/cubesat-render.png', alt: 'CubeSat Render' },
+    { src: '/images/pastels.jpg', alt: 'Pastels' },
+    { src: '/images/desert-shoot.jpg', alt: 'Desert photoshoot' },
+    { src: '/images/pnw.jpg', alt: 'Pacific Northwest' },
   ];
 
   const blogPosts = [
