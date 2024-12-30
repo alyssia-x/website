@@ -207,6 +207,9 @@ const Portfolio = () => {
           <a href="mailto:alyssia.jovellanos@gmail.com" className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
             • [Email]
           </a>
+          <div className="mt-6 text-sm text-gray-500 dark:text-gray-400 italic">
+            Move in space with minimum waste, maximum joy
+          </div>
         </Section>
       ),
     },
