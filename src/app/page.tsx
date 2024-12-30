@@ -15,7 +15,7 @@ const Section = ({ children }: { children: React.ReactNode }) => (
   </div>
 );
 
-const ImageModal = ({ photo, onClose }: { photo: { src: string; alt: string }; onClose: () => void }) => {
+const ImageModal = ({ photo, onClose }: { photo: { src: string; alt: string; type: 'image' | 'video' }; onClose: () => void }) => {
   useEffect(() => {
     const handleEscapeKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
@@ -33,15 +33,27 @@ const ImageModal = ({ photo, onClose }: { photo: { src: string; alt: string }; o
       onClick={onClose}
     >
       <div className="relative max-w-5xl w-full h-[80vh] rounded-lg overflow-hidden">
-        <Image
-          src={photo.src}
-          alt={photo.alt}
-          width={1200}
-          height={800}
-          className="object-contain w-full h-full grayscale hover:grayscale-0 transition-all duration-300"
-          sizes="90vw"
-          priority
-        />
+        {photo.type === 'image' ? (
+          <Image
+            src={photo.src}
+            alt={photo.alt}
+            width={1200}
+            height={800}
+            className="object-contain w-full h-full grayscale-0 transition-all duration-300"
+            sizes="90vw"
+            priority
+          />
+        ) : (
+          <video
+            src={photo.src}
+            className="object-contain w-full h-full grayscale-0"
+            controls
+            autoPlay
+            loop
+            playsInline
+            muted
+          />
+        )}
       </div>
     </div>
   );
@@ -49,7 +61,7 @@ const ImageModal = ({ photo, onClose }: { photo: { src: string; alt: string }; o
 
 const Portfolio = () => {
   useScrollPosition();
-  const [selectedPhoto, setSelectedPhoto] = useState<{ src: string; alt: string } | null>(null);
+  const [selectedPhoto, setSelectedPhoto] = useState<{ src: string; alt: string; type: 'image' | 'video' } | null>(null);
   const [activeTab, setActiveTab] = useState('current');
 
   useEffect(() => {
@@ -76,16 +88,22 @@ const Portfolio = () => {
     return `/blog/${slug}${hash}`;
   };
 
-  const photos = [
-    { src: '/images/archery.jpeg', alt: 'Archery training in Korea' },
-    { src: '/images/practice.jpeg', alt: 'Practice session' },
-    { src: '/images/happy-place.jpeg', alt: 'Happy place' },
-    { src: '/images/yosegi-puzzle.jpeg', alt: 'Yosegi puzzle box' },
-    { src: '/images/tako.jpeg', alt: 'Tako' },
-    { src: '/images/cubesat-render.png', alt: 'CubeSat Render' },
-    { src: '/images/pastels.jpg', alt: 'Pastels' },
-    { src: '/images/desert-shoot.jpg', alt: 'Desert photoshoot' },
-    { src: '/images/pnw.jpg', alt: 'Pacific Northwest' },
+  type MediaItem = {
+    src: string;
+    alt: string;
+    type: 'image' | 'video';
+  };
+
+  const photos: MediaItem[] = [
+    { src: '/images/archery.jpeg', alt: 'Archery training in Korea', type: 'image' },
+    { src: '/images/practice.jpeg', alt: 'Practice session', type: 'image' },
+    { src: '/images/happy-place.jpeg', alt: 'Happy place', type: 'image' },
+    { src: '/images/yosegi-puzzle.jpeg', alt: 'Yosegi puzzle box', type: 'image' },
+    { src: '/images/tako.jpeg', alt: 'Tako', type: 'image' },
+    { src: '/images/cubesat-render.png', alt: 'CubeSat Render', type: 'image' },
+    { src: '/images/yc-reunion-party.mp4', alt: 'YC Reunion Party', type: 'video' },
+    { src: '/images/desert-shoot.jpg', alt: 'Desert photoshoot', type: 'image' },
+    { src: '/images/pnw.jpg', alt: 'Pacific Northwest', type: 'image' },
   ];
 
   const blogPosts = [
@@ -225,17 +243,29 @@ const Portfolio = () => {
               onClick={() => setSelectedPhoto(photo)}
             >
               <div className="w-full aspect-square relative rounded-lg overflow-hidden">
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  width={400}
-                  height={400}
-                  className={`object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-105 ${
-                    photo.src === '/images/archery.jpeg' ? 'object-top' : 'object-center'
-                  }`}
-                  sizes="(max-width: 768px) 45vw, 30vw"
-                  priority={i < 2}
-                />
+                {photo.type === 'image' ? (
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    width={400}
+                    height={400}
+                    className={`object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-105 ${
+                      photo.src === '/images/archery.jpeg' ? 'object-top' : 'object-center'
+                    }`}
+                    sizes="(max-width: 768px) 45vw, 30vw"
+                    priority={i < 2}
+                  />
+                ) : (
+                  <video
+                    src={photo.src}
+                    className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-105"
+                    muted
+                    loop
+                    playsInline
+                    onMouseEnter={(e) => e.currentTarget.play()}
+                    onMouseLeave={(e) => e.currentTarget.pause()}
+                  />
+                )}
               </div>
             </figure>
           ))}
