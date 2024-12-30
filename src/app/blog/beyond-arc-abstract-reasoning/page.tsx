@@ -238,7 +238,7 @@ export default function BeyondArcPost() {
         <li>Problems where the rule itself must be inferred from a set of examples and then applied in a novel context</li>
       </ul>
 
-      <h3 id="difficult-challenges">3. Difficult / nearly impossible challenges for humans → Even Harder for AI (Next Generation: Currently <a href="#https://en.wikipedia.org/wiki/Lists_of_unsolved_problems" className="text-blue-600 dark:text-blue-400 hover:underline">unsolved problems</a> or recently solved "unsolved" problems) </h3>
+      <h3 id="difficult-challenges">3. Difficult / nearly impossible challenges for humans → Even Harder for AI (Next Generation: Currently <a href="https://en.wikipedia.org/wiki/Lists_of_unsolved_problems" className="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">unsolved problems</a> or recently solved "unsolved" problems) </h3>
       <p>
         Problems designed to probe true reasoning, incorporating Chollet's insights about program synthesis and abstraction.</p>
 
