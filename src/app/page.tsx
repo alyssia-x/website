@@ -133,7 +133,7 @@ const Portfolio = () => {
           • UK AI Safety Institute - building dangerous capability evaluations<br/>
           • International Space Station, Deep Space Biology & MD Anderson Cancer Center - T-Cell Microgravity Research<br/>
           • NASA Multi-Omics & AI/ML Analysis Working Group<br/>
-          • Incoming: Oxford Alignment Research Bootcamp<br/>
+          • Incoming: Oxford Alignment Research Bootcamp, Experimental Curriculum Designer @ BlueDot Impact<br/>
           • Olympic Recurve Archery (aiming for 2028/2032 olympics!)<br/>
           • Annual charity payloads w/ SpaceX - engraving names & dreams of cancer patients on space missions
         </Section>
@@ -265,6 +265,8 @@ const Portfolio = () => {
                     muted
                     loop
                     playsInline
+                    preload="metadata"
+                    poster={photo.src + '?t=0.1'}
                     onMouseEnter={(e) => e.currentTarget.play()}
                     onMouseLeave={(e) => e.currentTarget.pause()}
                   />
