@@ -19,7 +19,7 @@ export default function AISafetyFictionPost() {
       </p>
 
       <p>
-        But science fiction's true power lies not in exploration. When Mary Shelley wrote Frankenstein, she wasn't just telling a 
+        But science fiction's true power lies not just in exploration. When Mary Shelley wrote Frankenstein, she wasn't just telling a 
         spooky story – she was dissecting fundamental questions about scientific responsibility and the consequences of creation. 
         Today, as we grapple with AI safety, these questions echo with renewed urgency. We're living in an era where science fiction 
         and reality perform an intricate dance. When Star Trek showed us an AI whose protection protocols led it to conclude humans 
@@ -40,7 +40,7 @@ export default function AISafetyFictionPost() {
         Taking inspiration from initiatives like <a href="https://www.asimov.press/p/homeworld-ideas" target="_blank" rel="noopener noreferrer" className="blue-link">Asimov Press's recent biology writing challenge</a>, I believe we need something 
         similar for AI safety. Imagine a writing contest that brings together technical researchers, science fiction authors, 
         and anyone interested in the future of AI alignment. The goal? To generate fresh perspectives and novel approaches to 
-        AI safety through a narrative lens.
+        AI safety through a narrative lens. To help get you started, I've created a <Link href="/prompts" className="blue-link">random prompt generator</Link> with various AI safety fiction prompts.
       </p>
 
       <p>We could seek stories that:</p>
@@ -110,6 +110,13 @@ export default function AISafetyFictionPost() {
         The future has a habit of appearing in our stories before manifesting in reality. Let's create a space where those 
         stories can flourish.
       </p>
+
+      <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 my-8">
+        <h3 className="text-lg font-semibold mb-4">Update</h3>
+        <p className="mb-4">
+          Bluedot Impact is now hosting an AI Safety Fiction Writing Intensive in Jan 2025 inspired by this blogpost! <a href="https://forms.bluedot.org/Zrh4EzCEDrQUzyLPaqqy" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">Apply here</a>. For fun, I also made an <Link href="/prompts" className="text-blue-600 dark:text-blue-400 hover:underline">AI Safety Fiction Writing Prompt Generator</Link> with a focus on envisioning positive futures!
+        </p>
+      </div>
 
       <div className="not-prose bg-gray-50 dark:bg-gray-800/50 rounded-xl p-6 my-8">
         <div className="flex items-start gap-6">

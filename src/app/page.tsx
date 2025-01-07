@@ -170,6 +170,7 @@ const Portfolio = () => {
           • Music production & singing - currently working on <Link href="/audio/hold-on-were-going-home-ally" className="text-blue-600 dark:text-blue-400 hover:underline">this</Link> cover!<br/>
           • Almost competed against Magnus Carlsen (4x world chess champion)<br/>
           • Canadian<br/>
+          • Science fiction writing! <Link href="/blog/ai-safety-fiction-challenge" className="text-blue-600 dark:text-blue-400 hover:underline">blog post</Link> + <Link href="/prompts" className="text-blue-600 dark:text-blue-400 hover:underline">AI Safety Fiction Prompt Generator</Link><br/>
           • Known for frequent laughter :)
         </Section>
       ),
@@ -265,10 +266,9 @@ const Portfolio = () => {
                     muted
                     loop
                     playsInline
+                    autoPlay
                     preload="metadata"
                     poster={photo.src + '?t=0.1'}
-                    onMouseEnter={(e) => e.currentTarget.play()}
-                    onMouseLeave={(e) => e.currentTarget.pause()}
                   />
                 )}
               </div>
