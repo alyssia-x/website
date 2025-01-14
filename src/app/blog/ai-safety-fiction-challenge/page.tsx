@@ -40,7 +40,7 @@ export default function AISafetyFictionPost() {
         Taking inspiration from initiatives like <a href="https://www.asimov.press/p/homeworld-ideas" target="_blank" rel="noopener noreferrer" className="blue-link">Asimov Press's recent biology writing challenge</a>, I believe we need something 
         similar for AI safety. Imagine a writing contest that brings together technical researchers, science fiction authors, 
         and anyone interested in the future of AI alignment. The goal? To generate fresh perspectives and novel approaches to 
-        AI safety through a narrative lens. To help get you started, I've created a <Link href="/prompts" className="blue-link">random prompt generator</Link> with various AI safety fiction prompts.
+        AI safety through a narrative lens.
       </p>
 
       <p>We could seek stories that:</p>
