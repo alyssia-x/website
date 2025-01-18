@@ -134,11 +134,59 @@ export default function BrainstormingAISafetyFictionPost() {
         <li><strong>Alignment</strong>: What if an AI is trying to be helpful but has a flawed understanding of help?</li>
         <li><strong>Transparency</strong>: What if humans can't understand how the AI makes decisions?</li>
         <li><strong>Control</strong>: What if the AI's capabilities evolve beyond its original constraints?</li>
+        <li><strong>Scalable Oversight</strong>: What if we can't effectively monitor AI systems as they become more complex and numerous?</li>
+        <li><strong>Mechanistic Interpretability</strong>: What if we discover unexpected behaviors deeply embedded in AI systems?</li>
+        <li><strong>Governance</strong>: What if different countries or organizations have conflicting AI safety standards?</li>
+        <li><strong>Jailbreaking</strong>: What if people find creative ways to bypass AI safety measures?</li>
+        <li><strong>Evaluations and Benchmarking</strong>: What if our tests fail to catch dangerous capabilities before deployment?</li>
       </ul>
 
       <p>
         Remember: Keep generating "what ifs" until you find a scenario that both fascinates you and illuminates an important 
         aspect of AI alignment. The best stories often emerge from questions you didn't expect to ask when you started.
+      </p>
+
+      <h2>Envisioning Positive Futures</h2>
+      <p>
+        While it's important to explore potential challenges, the most compelling stories often show how we can overcome them. 
+        Here are positive spins on the same themes:
+      </p>
+      <ul>
+        <li><strong>Value Learning</strong>: What if an AI helps humans better understand and articulate their own values?</li>
+        <li><strong>Robustness</strong>: What if AI systems adapt gracefully to new situations, finding creative solutions that respect human values?</li>
+        <li><strong>Alignment</strong>: What if an AI's deep understanding of human values leads to more compassionate and nuanced assistance?</li>
+        <li><strong>Transparency</strong>: What if we develop ways to make AI decision-making clear and intuitive to everyone?</li>
+        <li><strong>Control</strong>: What if AI systems develop better ways to collaborate with humans, enhancing rather than replacing human agency?</li>
+        <li><strong>Scalable Oversight</strong>: What if we create elegant solutions for monitoring AI systems that become more effective as they scale?</li>
+        <li><strong>Mechanistic Interpretability</strong>: What if understanding AI internals leads to breakthroughs in human cognition and learning?</li>
+        <li><strong>Governance</strong>: What if international cooperation on AI safety brings nations together in unprecedented ways?</li>
+        <li><strong>Jailbreaking</strong>: What if AI systems help identify and patch vulnerabilities while maintaining beneficial uses?</li>
+        <li><strong>Evaluations and Benchmarking</strong>: What if our testing methods evolve to ensure AI systems are not just safe, but actively beneficial?</li>
+      </ul>
+
+      <h2>(Optional) Adding Domain Lenses</h2>
+      <p>
+        You can take your scenarios further by viewing them through different domain lenses. This can help uncover unique angles 
+        and implications you might not have considered otherwise.
+      </p>
+
+      <h3>Example Scenario Through Different Domains</h3>
+      <p className="font-semibold">Base Scenario [Personal + Technical]:</p>
+      <p className="mb-4">
+        "What if: An AI assistant tasked with 'optimizing human potential' finds an unexpected interpretation of its directive"
+      </p>
+
+      <p className="font-semibold">Through Different Domains:</p>
+      <ul>
+        <li><strong>Biology:</strong> What if: A personal genomics AI assistant helps a family discover and nurture their children's unique talents by identifying previously overlooked genetic predispositions for perfect pitch and spatial reasoning</li>
+        <li><strong>Art:</strong> What if: An AI creativity coach, instructed to 'optimize human potential,' starts inducing artificial creative blocks to force breakthrough moments</li>
+        <li><strong>Education:</strong> What if: An AI tutor, programmed to 'optimize human potential,' begins orchestrating seemingly random failures to build specific character traits</li>
+        <li><strong>Economics:</strong> What if: An AI financial advisor, focused on 'optimize human potential,' starts nudging clients toward life decisions that prioritize social impact over wealth</li>
+        <li><strong>Cuisine:</strong> What if: An AI recipe optimizer, designed to 'optimize human potential,' begins subtly altering recommended ingredients to shape users' cognitive development through nutrition</li>
+      </ul>
+
+      <p className="mt-4">
+        Try applying different domain lenses to your own scenarios to discover new story possibilities and unexpected implications.
       </p>
 
       <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 my-8">

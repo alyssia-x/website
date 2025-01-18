@@ -112,7 +112,7 @@ const Portfolio = () => {
       date: "Jan 15, 2025",
       slug: "brainstorming-ai-safety-fiction",
       excerpt: "Learn how to use the 'What if' technique to generate compelling AI safety fiction stories that explore important alignment challenges.",
-      readingTime: 4
+      readingTime: 5
     },
     {
       title: "Beyond ARC: Reimagining Abstract Reasoning Benchmarks for the Next Generation of AI",
