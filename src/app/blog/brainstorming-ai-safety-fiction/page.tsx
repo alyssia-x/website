@@ -17,12 +17,35 @@ export default function BrainstormingAISafetyFictionPost() {
         technique to generate thought-provoking AI safety fiction.
       </p>
 
+      <blockquote className="border-l-4 border-blue-500 pl-4 my-4 italic">
+        "You first come up with the core idea that connects with you emotionally, and then nudge them in directions that offers 
+        the greatest possibility for conflict." <span className="text-sm not-italic">- Elements of Fiction Writing - Conflict and Suspense</span>
+      </blockquote>
+
+      <p>
+        For example: You're a therapist and one day, you realize that one of your patients is an AI. From this emotionally resonant 
+        core idea, you can start exploring all the possible types of conflict this situation could create.
+      </p>
+
+      <h2>Finding Your Emotional Core</h2>
+      <p>
+        Before diving into the technical aspects of AI safety, start with scenarios that personally move you. Here are some 
+        emotionally compelling examples of positive futures:
+      </p>
+      <ul>
+        <li>What if an AI develops such a deep understanding of child development that it helps create personalized learning experiences that bring out each child's unique gifts?</li>
+        <li>What if an AI and its creator form a partnership so profound that together they discover new ways to help humanity flourish?</li>
+        <li>What if an AI's genuine care for humanity leads it to find creative ways to empower people to achieve their dreams while staying true to their values?</li>
+      </ul>
+
       <h2>The "What If" Technique</h2>
       <p>
         The "What if" technique is one of the most effective ways to generate story ideas. Start with a basic scenario or 
         concept, then keep asking "What if?" to explore different possibilities and complications. The key is to generate 
         many ideas - often the most interesting concepts emerge after 30-50 "what ifs", well past your initial thoughts.
       </p>
+
+      <h3>Building on Your Core Idea</h3>
 
       <h3>Example of the Process:</h3>
       <p>Start with a basic concept: "An AI system is trying to learn human values"</p>
