@@ -129,6 +129,13 @@ export default function SpeedrunStoryOutlinesPost() {
         readers about the possibilities for beneficial AI futures.
       </p>
 
+      <div className="bg-blue-100 dark:bg-blue-900/30 rounded-lg p-6 my-8">
+        <h3 className="text-lg font-semibold mb-4">Next in the AI Safety Fiction Challenge Curriculum</h3>
+        <p>
+          Next post in our series (Session 3): <Link href="/writing-first-drafts" className="text-blue-600 dark:text-blue-400 hover:underline">Writing First Fiction Drafts: From Speedrun to Story</Link>
+        </p>
+      </div>
+
       <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 my-8">
         <h3 className="text-lg font-semibold mb-4">Ready to start writing?</h3>
         <p className="mb-4">
