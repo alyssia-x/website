@@ -43,12 +43,15 @@ export default function WritingFirstDraftsPost() {
         <li>Gives you a clear starting point</li>
       </ul>
 
-      <h3>2. Create a Rough Scene Map</h3>
+      <h3>2. Add to Your Rough Scene Map</h3>
       <ul>
-        <li>List 2-4 major story beats</li>
-        <li>Note key revelations/turning points</li>
-        <li>Identify emotional highs and lows</li>
-        <li>Mark where your AI safety concept comes into play</li>
+        <li>From your 2-4 major story beats:
+          <ul className="ml-6">
+            <li>Note key revelations/turning points</li>
+            <li>Identify emotional highs and lows</li>
+            <li>Mark where your AI safety concept comes into play</li>
+          </ul>
+        </li>
       </ul>
 
       <p>But remember: This map is just a suggestion. Let the story evolve as you write.</p>
@@ -228,6 +231,17 @@ AI and I might both be learning something new here.`}</pre>
         Notice how each story beat expands into a full paragraph while maintaining the original structure. The draft is still 
         rough and uses placeholders, but it's starting to take shape as a proper story. This is the carvings of what a first draft could start to look like – messy but full of potential!
       </p>
+
+      <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 my-8">
+        <h3 className="text-lg font-semibold mb-4">Ready to start writing?</h3>
+        <p className="mb-4">
+          Get inspired with the <Link href="/prompts" className="text-blue-600 dark:text-blue-400 hover:underline">AI Safety Fiction Prompt Generator</Link> - 
+          a collection of writing prompts designed to explore different aspects of AI alignment through narrative.
+        </p>
+        <p>
+          Want to take your writing further? Bluedot Impact is hosting an AI Safety Fiction Writing Intensive in Jan 2025! <a href="https://forms.bluedot.org/Zrh4EzCEDrQUzyLPaqqy" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">Apply here</a>.
+        </p>
+      </div>
 
       <div className="not-prose bg-gray-50 dark:bg-gray-800/50 rounded-xl p-6 my-8">
         <div className="flex items-start gap-6">

@@ -89,15 +89,6 @@ export default function SpeedrunStoryOutlinesPost() {
         not the fully-formed story itself. Use plenty of placeholders when you just have a general direction in mind.
       </p>
 
-      <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-6 my-8">
-        <h3 className="text-lg font-semibold mb-4">Example Concept</h3>
-        <p className="italic mb-4">
-          What if we had a story about what evaluations become in the far future... When AI has become the people making 
-          the benchmarks, and these benchmarks are speedrun by AI in competitions as if they were competitive gamers. 
-          We have 2 AI gamer bros competing and discussing. Funny, and uplifting tone?
-        </p>
-      </div>
-
       <h3>Key Questions to Answer</h3>
       <p>For each of your top ideas from your brainstorming session, try answering these questions:</p>
       
