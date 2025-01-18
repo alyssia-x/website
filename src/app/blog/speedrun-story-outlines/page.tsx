@@ -18,7 +18,7 @@ export default function SpeedrunStoryOutlinesPost() {
         Here's how to apply the "speedrun" method to story outlining:
       </p>
 
-      <h2>Set Up Your Creative Sprint (5 minutes)</h2>
+      <h2>Set Up Your Creative Sprint</h2>
       <ul>
         <li>Choose the AI safety concept you want to explore from your "What if" brainstorming</li>
         <li>Set aside 30-60 minutes of uninterrupted time</li>
@@ -26,7 +26,7 @@ export default function SpeedrunStoryOutlinesPost() {
         <li>Remember: The goal is quantity over quality - we're generating possibilities!</li>
       </ul>
 
-      <h2>Speedrun 10 Different Story Angles (30-40 minutes)</h2>
+      <h2>Speedrun 10 Different Story Angles</h2>
       <p>
         Challenge yourself to generate 10 wildly different ways to tell your story. Let your creativity run wild by varying:
       </p>
