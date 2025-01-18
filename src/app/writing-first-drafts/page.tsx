@@ -81,7 +81,7 @@ export default function WritingFirstDraftsPost() {
         <li>Find surprising connections</li>
       </ul>
 
-      <h3>Stage 3: The Completion Draft (1-2 hours)</h3>
+      <h3>Stage 3: The Completion Draft</h3>
       <ul>
         <li>Connect loose scenes</li>
         <li>Clarify key concepts</li>
