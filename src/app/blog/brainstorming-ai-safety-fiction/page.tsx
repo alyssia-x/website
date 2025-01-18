@@ -61,7 +61,7 @@ export default function BrainstormingAISafetyFictionPost() {
         <li>What if the AI becomes a therapist to better understand human values?</li>
         <li>What if the AI realizes humans aren't fully aware of their own values?</li>
       </ul>
-      <p>Keep going! Notice how each question builds on previous ones and leads to more interesting scenarios.</p>
+      <p>Keep going! Notice how each question builds on previous ones and leads to more interesting scenarios. Note that your questions don't necessarily need to expand. You can start a completely new branch of "what ifs" whenever you feel ready.</p>
 
       <h2>Starting Points for "What If" Chains</h2>
       <p>Here are some AI safety concepts you can use as starting points for your own "What if" chains:</p>

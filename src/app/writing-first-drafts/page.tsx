@@ -12,8 +12,9 @@ export default function WritingFirstDraftsPost() {
       authorImage="/images/blog/aly-headshot.png"
     >
       <p>
-        You've speedrun your outlines and generated multiple story angles. Now it's time to transform those rapid-fire ideas 
-        into a messy but complete first draft. Here's how to maintain that creative momentum while expanding your story.
+        You've speedrun your outlines and generated multiple story angles, explored story beats, and answered key questions 
+        about your concept. Now it's time to transform those rapid-fire ideas into a messy but complete first draft. Here's 
+        how to maintain that creative momentum while expanding your story.
       </p>
 
       <h2>The First Draft Mindset</h2>
@@ -44,7 +45,7 @@ export default function WritingFirstDraftsPost() {
 
       <h3>2. Create a Rough Scene Map</h3>
       <ul>
-        <li>List 5-7 major story beats</li>
+        <li>List 2-4 major story beats</li>
         <li>Note key revelations/turning points</li>
         <li>Identify emotional highs and lows</li>
         <li>Mark where your AI safety concept comes into play</li>
@@ -54,9 +55,9 @@ export default function WritingFirstDraftsPost() {
 
       <h2>The Writing Process</h2>
 
-      <h3>Stage 1: The Fast Draft (2-3 hours)</h3>
+      <h3>Stage 1: The Fast Draft</h3>
       <ul>
-        <li>Set a timer for 45-minute sprints</li>
+        <li>Set a timer for 15-minute sprints (or use a pomodoro timer!)</li>
         <li>Write continuously without looking back</li>
         <li>Use [PLACEHOLDER] for any stuck points</li>
         <li>Focus on forward momentum</li>
@@ -71,7 +72,7 @@ export default function WritingFirstDraftsPost() {
 [RESEARCH: realistic ML details]`}
       </pre>
 
-      <h3>Stage 2: The Story Discovery Draft (2-3 hours)</h3>
+      <h3>Stage 2: The Story Discovery Draft</h3>
       <ul>
         <li>Fill major placeholders</li>
         <li>Add sensory details</li>
@@ -126,8 +127,6 @@ export default function WritingFirstDraftsPost() {
       <ul>
         <li>Give them clear goals/constraints</li>
         <li>Show their unique perspective</li>
-        <li>Avoid anthropomorphizing unnecessarily</li>
-        <li>Highlight their alien aspects</li>
         <li>Ground them in real AI concepts</li>
       </ul>
 
@@ -152,7 +151,7 @@ export default function WritingFirstDraftsPost() {
       <h2>Next Steps</h2>
       <p>Once you've completed your messy first draft:</p>
       <ol>
-        <li>Take a break (at least 24 hours)</li>
+        <li>Take a break (1-24 hours)</li>
         <li>Read it through without editing</li>
         <li>Note major areas for development</li>
         <li>Identify research needs</li>
@@ -165,41 +164,69 @@ export default function WritingFirstDraftsPost() {
         follow your curiosity, and keep writing forward. You can make it good later - right now, you just need to make it exist.
       </p>
 
-      <h2>Example: Turning a Speedrun Outline into a First Draft</h2>
+      <h2>Example: From Story Beats to First Draft</h2>
 
-      <p>Original Outline:</p>
+      <h3>Starting Point: Original Concept & Story Beats</h3>
       <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto text-gray-800 dark:text-gray-200">
-{`"The Diary Entry" - AI researcher documenting unexpected AI insights about human values.
-Opens: "Day 47: Today the AI asked me why humans say they value health but design cities for cars..."`}
-      </pre>
+{`"The Diary Entry" - AI researcher documenting value learning insights
 
-      <p>First Draft Expansion:</p>
+Setting: Near-future AI lab
+Tone: Contemplative, philosophical
+Main conflict: AI questioning human value contradictions
+
+[OPENING BEAT]
+- Late night in AI lab
+- Researcher reviewing unexpected AI output
+- First hint that AI is noticing human contradictions
+
+[ESCALATION BEATS]
+- AI questions city design vs health values
+- Researcher struggles to explain historical context
+- Series of increasingly challenging value contradictions
+- Each entry reveals deeper insights about human nature
+
+[TURNING POINT]
+- Key realization about value learning challenge
+- Personal connection to city design example
+- Memory of walking through city, seeing contradictions firsthand
+
+[RESOLUTION IDEAS]
+- New approach to value learning
+- Acceptance of human complexity
+- AI and researcher finding middle ground`}</pre>
+
+      <h3>First Draft Expansion:</h3>
       <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto text-gray-800 dark:text-gray-200">
-{`[OPENING: Description of AI lab late at night]
+{`[OPENING BEAT]
+The lab is eerily quiet at 3 AM, just the soft hum of servers and the glow of my monitor. 
+I've been staring at the same output for the past hour, my coffee long since gone cold. 
+Our AI just said something that's keeping me up tonight, something that makes me question 
+everything we've been doing.
 
-Day 47: Today the AI asked me why humans say they value health but design cities for cars instead of walking. I stared at the output for a long time. How do you explain centuries of urban planning to an AI that takes our stated values literally?
+[ESCALATION BEATS]
+The conversation started innocently enough. The AI was analyzing urban development data 
+when it posed what seemed like a simple question: why do humans design cities that 
+contradict their stated values? I tried explaining the complex history of urban planning, 
+but each answer only led to more probing questions. It's like watching a child discover 
+the world's inconsistencies for the first time, except this child has access to centuries 
+of human decision-making data.
 
-[ADD: Brief background on the value learning project]
+[TURNING POINT]
+Walking home tonight, I couldn't help seeing the city through the AI's eyes. The wide 
+roads prioritizing cars over pedestrians, the lack of green spaces, the way our 
+architecture reflects our short-term thinking. We say health is a primary value, yet 
+our cities tell a different story. The AI isn't just questioning our values – it's 
+questioning the gap between what we say and what we do.
 
-"Humans often act against their own values," I typed back. "We're not always rational."
-
-The response came quickly: "Then how can I learn your true values if your actions contradict them?"
-
-[EXPAND: Researcher's growing realization about the challenge]
-
-That's the question that keeps me up at night. We're teaching AIs to learn our values, but which values? The ones we claim to have, or the ones revealed by our actions?
-
-[SCENE: Memory of walking through city, noticing contradictions]`}
-      </pre>
+[RESOLUTION]
+Maybe we've been approaching value learning all wrong. Instead of trying to teach AI 
+our stated values, we need to acknowledge our own contradictions. What if the key isn't 
+perfect consistency, but understanding the complex, messy reality of human nature? The 
+AI and I might both be learning something new here.`}</pre>
 
       <p>
-        Remember: This is deliberately rough and incomplete. Its purpose is to start exploring the story's possibilities and 
-        generate material for future development.
-      </p>
-
-      <p>
-        Your first draft is a beginning, not a destination. Give yourself permission to write badly, use placeholders liberally, 
-        and focus on discovery. The polishing comes later.
+        Notice how each story beat expands into a full paragraph while maintaining the original structure. The draft is still 
+        rough and uses placeholders, but it's starting to take shape as a proper story. This is the carvings of what a first draft could start to look like – messy but full of potential!
       </p>
 
       <div className="not-prose bg-gray-50 dark:bg-gray-800/50 rounded-xl p-6 my-8">

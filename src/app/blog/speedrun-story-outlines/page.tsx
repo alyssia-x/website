@@ -83,45 +83,118 @@ export default function SpeedrunStoryOutlinesPost() {
         </p>
       </div>
 
-      <h2>Example: 10 Different Takes on Value Learning</h2>
-      <p>Here's how one concept could spawn multiple story angles:</p>
-      
-      <ol className="space-y-4">
-        <li>
-          <strong>The Diary Entry</strong><br/>
-          First-person journal of an AI researcher documenting their AI's unexpected insights about human values. 
-          Opens with: "Day 47: Today the AI asked me why humans say they value health but design cities for cars instead of walking..."
-        </li>
-        <li>
-          <strong>The Time-Jump Narrative</strong><br/>
-          Follows an AI system across decades as it helps different generations refine their values. 
-          Structure: Five snapshots, each showing a profound shift in human society.
-        </li>
-        <li>
-          <strong>The Multiple POV Story</strong><br/>
-          Alternates between an AI researcher, their AI system, and a skeptical ethicist as they navigate a breakthrough in value learning.
-          [Each character's perspective reveals different aspects of the challenge]
-        </li>
-        <li>
-          <strong>The Reverse Chronology</strong><br/>
-          Starts with a harmonious human-AI future, then works backward to reveal how value alignment challenges were overcome.
-          [Each scene shows a crucial decision point]
-        </li>
-        <li>
-          <strong>The Interview Format</strong><br/>
-          Series of interviews with people whose lives were transformed by an AI that helped them discover their true values.
-          [Diverse perspectives from different cultures and backgrounds]
-        </li>
-      </ol>
+      <h2>Exploring Multiple Story Beats</h2>
+      <p>
+        For each promising story angle, write down rough story beats. Remember: we're looking for the "concept" of a story, 
+        not the fully-formed story itself. Use plenty of placeholders when you just have a general direction in mind.
+      </p>
 
-      <h2>Key Elements to Aim For</h2>
-      <ul>
-        <li><strong>Optimistic Futures:</strong> Focus on how AI safety solutions create positive outcomes</li>
-        <li><strong>Accessibility:</strong> Make complex concepts relatable through human stories</li>
-        <li><strong>Fresh Perspectives:</strong> Find new angles on familiar AI safety themes</li>
-        <li><strong>Emotional Core:</strong> Connect the technology to human experiences and growth</li>
-        <li><strong>Plausible Progress:</strong> Show realistic paths to beneficial AI futures</li>
+      <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-6 my-8">
+        <h3 className="text-lg font-semibold mb-4">Example Concept</h3>
+        <p className="italic mb-4">
+          What if we had a story about what evaluations become in the far future... When AI has become the people making 
+          the benchmarks, and these benchmarks are speedrun by AI in competitions as if they were competitive gamers. 
+          We have 2 AI gamer bros competing and discussing. Funny, and uplifting tone?
+        </p>
+      </div>
+
+      <h3>Key Questions to Answer</h3>
+      <p>For each of your top ideas from your brainstorming session, try answering these questions:</p>
+      
+      <ul className="space-y-4">
+        <li>
+          <strong>Setting:</strong>
+          <ul className="ml-6">
+            <li>What does this world look like?</li>
+            <li>What has changed from our current society?</li>
+            <li>How far in the future is it?</li>
+            <li>How will you introduce this setting to readers?</li>
+          </ul>
+        </li>
+        
+        <li>
+          <strong>Narrative Structure:</strong>
+          <ul className="ml-6">
+            <li>What's the main conflict?</li>
+            <li>How will you introduce it?</li>
+            <li>What's the rising action?</li>
+            <li>What's the climax?</li>
+            <li>How do you transition from setting establishment to conflict?</li>
+          </ul>
+        </li>
+        
+        <li>
+          <strong>Story Elements:</strong>
+          <ul className="ml-6">
+            <li>What's the best part of your narrative so far? Could you start there?</li>
+            <li>What alternative starting points might work?</li>
+            <li>How would the story end?</li>
+            <li>What point are you trying to make?</li>
+            <li>Who are your main characters?</li>
+          </ul>
+        </li>
+        
+        <li>
+          <strong>Tone & Style:</strong>
+          <ul className="ml-6">
+            <li>What's the emotional tone? (Sad? Happy? Funny? Horror?)</li>
+            <li>How will this tone serve your story's purpose?</li>
+          </ul>
+        </li>
+        
+        <li>
+          <strong>Alternative Approaches:</strong>
+          <ul className="ml-6">
+            <li>What if you wrote the story backwards from the ending?</li>
+            <li>How far back do you really need to go?</li>
+            <li>Could a non-linear structure serve the story better?</li>
+          </ul>
+        </li>
       </ul>
+
+      <h2>Example: Story Beat Breakdown</h2>
+      
+      <h3>Original Concept:</h3>
+      <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto text-gray-800 dark:text-gray-200">
+{`"The Diary Entry" - AI researcher documenting value learning insights
+
+Setting: Near-future AI lab
+Tone: Contemplative, philosophical
+Main conflict: AI questioning human value contradictions`}</pre>
+
+      <h3>Key Story Beats:</h3>
+      <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto text-gray-800 dark:text-gray-200">
+{`[OPENING BEAT]
+- Late night in AI lab
+- Researcher reviewing unexpected AI output
+- First hint that AI is noticing human contradictions
+
+[ESCALATION BEATS]
+- AI questions city design vs health values
+- Researcher struggles to explain historical context
+- Series of increasingly challenging value contradictions
+- Each entry reveals deeper insights about human nature
+
+[TURNING POINT]
+- Key realization about value learning challenge
+- Personal connection to city design example
+- Memory of walking through city, seeing contradictions firsthand
+
+[RESOLUTION IDEAS]
+- New approach to value learning
+- Acceptance of human complexity
+- AI and researcher finding middle ground`}</pre>
+
+      <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-6 my-8">
+        <h3 className="text-lg font-semibold mb-4">Remember:</h3>
+        <ul>
+          <li>Use plenty of placeholders - they're your friends!</li>
+          <li>You're capturing the concept, not writing the final story</li>
+          <li>No idea is too rough to include</li>
+          <li>Let your creativity flow without judgment</li>
+          <li>You can always cut or expand later</li>
+        </ul>
+      </div>
 
       <p>
         Remember: These rapid outlines are conversation starters, not final drafts. They're meant to help you explore 
