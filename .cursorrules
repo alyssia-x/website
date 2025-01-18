@@ -7,7 +7,12 @@ is_static_export: true
 use_pnpm: true
 use_motion: true
 
-# Chain fo thought
+
+# Coding rules
+Prefer to use constants that are defined on the beginning of the function rather than inline constants
+Prefer readability and simple code over all else
+
+# Chain of thought
 - Before beginning, think if a specific package exist that will be easier than reimplementing existing code
 
 # Blog Post Guidelines
@@ -20,7 +25,3 @@ use_motion: true
 - Keep paragraphs concise and focused
 - Use lists for enumerated points
 - Include proper spacing between sections
-
-# Coding rules
-Prefer to use constants that are defined on the beginning of the function rather than inline constants
-Prefer readability and simple code over all else
