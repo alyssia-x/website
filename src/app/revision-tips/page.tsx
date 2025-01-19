@@ -191,6 +191,15 @@ export default function RevisionTipsPost() {
       </div>
 
       <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 my-8">
+        <h3 className="text-lg font-semibold mb-4">Browse previous posts in the series</h3>
+        <ul>
+          <li className="mb-2">Session 1: <Link href="/blog/brainstorming" className="text-blue-600 dark:text-blue-400 hover:underline">Brainstorming Ideas for AI Safety Fiction</Link></li>
+          <li className="mb-2">Session 2: <Link href="/blog/speedrun-story-outlines" className="text-blue-600 dark:text-blue-400 hover:underline">How to Speedrun Story Outlines for Envisioning Positive AI Safety Futures</Link></li>
+          <li>Session 3: <Link href="/writing-first-drafts" className="text-blue-600 dark:text-blue-400 hover:underline">Writing First Fiction Drafts: From Speedrun to Story</Link></li>
+        </ul>
+      </div>
+
+      <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 my-8">
         <h3 className="text-lg font-semibold mb-4">Ready to start writing?</h3>
         <p className="mb-4">
           Get inspired with the <Link href="/prompts" className="text-blue-600 dark:text-blue-400 hover:underline">AI Safety Fiction Prompt Generator</Link> - 
