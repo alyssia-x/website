@@ -184,6 +184,13 @@ export default function RevisionTipsPost() {
       </p>
 
       <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 my-8">
+        <h3 className="text-lg font-semibold mb-4">Next in the AI Safety Fiction Challenge Curriculum</h3>
+        <p className="mb-4">
+          You've completed the core curriculum! Now it's time to finalize your story title and hit publish.
+        </p>
+      </div>
+
+      <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 my-8">
         <h3 className="text-lg font-semibold mb-4">Ready to start writing?</h3>
         <p className="mb-4">
           Get inspired with the <Link href="/prompts" className="text-blue-600 dark:text-blue-400 hover:underline">AI Safety Fiction Prompt Generator</Link> - 

@@ -237,6 +237,10 @@ AI and I might both be learning something new here.`}</pre>
         <p className="mb-4">
           Next post in our series (Session 4): <Link href="/revision-tips" className="text-blue-600 dark:text-blue-400 hover:underline">Revision Tips & Checklists for AI Safety Fiction: A Layer-by-Layer Guide</Link>
         </p>
+      </div>
+
+      <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 my-8">
+        <h3 className="text-lg font-semibold mb-4">Ready to start writing?</h3>
         <p className="mb-4">
           Get inspired with the <Link href="/prompts" className="text-blue-600 dark:text-blue-400 hover:underline">AI Safety Fiction Prompt Generator</Link> - 
           a collection of writing prompts designed to explore different aspects of AI alignment through narrative.
