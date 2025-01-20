@@ -148,6 +148,7 @@ export default function BrainstormingAISafetyFictionPost() {
         <li><strong>Explore Contradictions</strong>: Look for situations where different objectives or values conflict.</li>
         <li><strong>Think Small and Large</strong>: Consider both personal, intimate scenarios and larger societal implications.</li>
         <li><strong>Stay Grounded</strong>: While exploring possibilities, keep the core AI safety concerns in mind.</li>
+        <li><strong>Build New Branches</strong>: Note that your questions don't necessarily need to expand. You can start a completely new branch of "what ifs" whenever you feel ready.</li>
       </ol>
 
       <h2>Common AI Safety Themes to Explore Through "What Ifs"</h2>
