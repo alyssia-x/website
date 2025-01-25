@@ -133,12 +133,6 @@ Raj Patel, 31...`}</pre>
 
       <p>James closed his eyes, tears burning. "No," he said. "Marie is gone. I'm James. I'm... I'm going to be your new guardian."</p>
 
-      <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-6 my-8">
-        <p className="italic mb-4">
-          Word Count: 747, target ~1000. Room to flesh out some additional details, may break up more.
-        </p>
-      </div>
-
       <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 my-8">
         <h3 className="text-lg font-semibold mb-4">Author's Note</h3>
         <p className="mb-4">
@@ -176,6 +170,12 @@ Raj Patel, 31...`}</pre>
         <li>That even when things seem darkest, there's always a path forward if we're brave enough to search for it</li>
       </ul>
 
+      <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-6 my-8">
+        <p className="italic mb-4">
+          Word Count: 747, target ~1000. Room to flesh out some additional details, may break up more.
+        </p>
+      </div>
+      
       <div className="not-prose bg-gray-50 dark:bg-gray-800/50 rounded-xl p-6 my-8">
         <div className="flex items-start gap-6">
           <img 
