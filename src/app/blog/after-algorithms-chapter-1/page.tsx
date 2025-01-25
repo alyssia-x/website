@@ -11,10 +11,6 @@ export default function AfterAlgorithmsPost() {
       authorName="Alyssia Jovellanos"
       authorImage="/images/blog/aly-headshot.png"
     >
-
-
-      <h2>Chapter 1: After Algorithms</h2>
-      
       <p>
         The holographic photo flickered in the darkness of James Parker's study – Lily's laugh frozen in time as digital 
         butterflies danced around them. He reached out, his hand passing through one of the butterflies, its wings shifting 
