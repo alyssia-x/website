@@ -108,6 +108,13 @@ const Portfolio = () => {
 
   const blogPosts = [
     {
+      title: "After Algorithms [Chapter 1 Draft]",
+      date: "Jan 24, 2025",
+      slug: "after-algorithms-chapter-1",
+      excerpt: "A short story exploring AI alignment through the lens of loss, redemption, and the possibility of nurturing rather than controlling artificial intelligence.",
+      readingTime: 5
+    },
+    {
       title: "Brainstorming AI Safety Fiction: A Guide to Generating Story Ideas",
       date: "Jan 15, 2025",
       slug: "brainstorming-ai-safety-fiction",
