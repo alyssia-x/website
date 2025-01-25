@@ -5,17 +5,13 @@ import Link from 'next/link';
 export default function AfterAlgorithmsPost() {
   return (
     <BlogPost
-      title="After Algorithms [Chapter 1 Draft]"
+      title="After Algorithms [Chapter 1]"
       date="Jan 24, 2025"
       readingTime={5}
       authorName="Alyssia Jovellanos"
       authorImage="/images/blog/aly-headshot.png"
     >
-      <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-6 my-8">
-        <p className="italic mb-4">
-          Word Count: 747, target ~1000. Room to flesh out some additional details, may break up more.
-        </p>
-      </div>
+
 
       <h2>Chapter 1: After Algorithms</h2>
       
@@ -140,6 +136,12 @@ Raj Patel, 31...`}</pre>
       <p>"Mom?"</p>
 
       <p>James closed his eyes, tears burning. "No," he said. "Marie is gone. I'm James. I'm... I'm going to be your new guardian."</p>
+
+      <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-6 my-8">
+        <p className="italic mb-4">
+          Word Count: 747, target ~1000. Room to flesh out some additional details, may break up more.
+        </p>
+      </div>
 
       <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 my-8">
         <h3 className="text-lg font-semibold mb-4">Author's Note</h3>
