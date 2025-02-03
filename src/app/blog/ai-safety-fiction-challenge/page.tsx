@@ -114,7 +114,13 @@ export default function AISafetyFictionPost() {
       <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 my-8">
         <h3 className="text-lg font-semibold mb-4">Update</h3>
         <p className="mb-4">
-          Bluedot Impact is now hosting an AI Safety Fiction Writing Intensive in Jan 2025 inspired by this blogpost! <a href="https://forms.bluedot.org/Zrh4EzCEDrQUzyLPaqqy" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">Apply here</a>. For fun, I also made an <Link href="/prompts" className="text-blue-600 dark:text-blue-400 hover:underline">AI Safety Fiction Writing Prompt Generator</Link> with a focus on envisioning positive futures!
+          This post inspired the Bluedot Impact Safety Fiction Writing Intensive (Jan 2025), where we wrote and published stories in <a href="https://flashfictionmagazine.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">Flash Fiction</a> and other magazines. Check out parts of the curriculum I wrote <Link href="/blog/brainstorming-ai-safety-fiction" className="text-blue-600 dark:text-blue-400 hover:underline">here</Link>. For fun, I also made an <Link href="/prompts" className="text-blue-600 dark:text-blue-400 hover:underline">AI Safety Fiction Prompt Generator</Link> with a focus on envisioning positive futures!
+        </p>
+        <p className="mb-4">
+          As part of the challenge, I wrote chapter one of a story called <Link href="/blog/after-algorithms-chapter-1" className="text-blue-600 dark:text-blue-400 hover:underline">After Algorithms</Link> that explores AI alignment less as making AI obey or matching value vectors, and more like raising a child. Would love your thoughts!
+        </p>
+        <p>
+          We are now forming the AI Safety Fiction Collective. If you'd like me to customize or facilitate a version of this course for a group, run a contest, or inquire about joining our group, reach out to me <a href="mailto:alyssia.jovellanos@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">here</a>.
         </p>
       </div>
 
