@@ -366,7 +366,7 @@ export default function BeyondArcPost() {
             <h2 id="about-author" className="text-2xl font-bold text-gray-900 dark:text-white mb-4">About the Author</h2>
             <p className="text-sm text-gray-700 dark:text-gray-300">
               Alyssia is an engineer and independent researcher currently doing evaluation and benchmarking work for the UK AI 
-              Safety Institute. With previous experience at Google and Microsoft, she led Team Canada to 3rd place out of 18,000 
+              Security Institute. With previous experience at Google and Microsoft, she led Team Canada to 3rd place out of 18,000 
               teams at the International Quant Championships in Singapore. Her background combines practical engineering experience 
               with expertise in quantitative assessment and AI evaluation/benchmarking. She also develops premium coding datasets 
               to train advanced code models. If you're interested in collaborating, discussing these topics, or accessing premium 
