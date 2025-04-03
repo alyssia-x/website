@@ -143,7 +143,7 @@ const Portfolio = () => {
       label: 'Current',
       content: (
         <Section>
-          • Independent AI Researcher<br/>
+          • Independent AI Researcher, Engineer<br/>
           • UK AI Security Institute - building dangerous capability evaluations<br/>
           • International Space Station, Deep Space Biology & MD Anderson Cancer Center - T-Cell Microgravity Research<br/>
           • NASA Multi-Omics & AI/ML Analysis Working Group<br/>
