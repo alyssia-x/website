@@ -147,7 +147,7 @@ const Portfolio = () => {
           • UK AI Security Institute - building dangerous capability evaluations<br/>
           • International Space Station, Deep Space Biology & MD Anderson Cancer Center - T-Cell Microgravity Research<br/>
           • NASA Multi-Omics & AI/ML Analysis Working Group<br/>
-          • Incoming: Oxford Alignment Research Bootcamp, Experimental Curriculum Designer for BlueDot Impact<br/>
+          • Incoming: Visiting Researcher at Meridian Cambridge<br/>
           • Olympic Recurve Archery (aiming for 2028/2032 olympics!)<br/>
           • Annual charity payloads w/ SpaceX - engraving names & dreams of cancer patients on space missions
         </Section>
@@ -164,6 +164,7 @@ const Portfolio = () => {
           • Google - Smart Compose/Gmail Intelligence Team<br/>
           • Stanford - Remote CS106A Instructor<br/>
           • Montreal Institute for Learning Algorithms (MILA)<br/>
+          • Oxford Alignment Research Bootcamp
           • International Quant Championship - Team Canada, North American Champions (Ranked 3rd out of 18,000 teams across 131 countries)<br/>
           • Founded Canada's largest hackathon for change<br/>
           • Computing education initiatives in low-income neighborhoods<br/>
