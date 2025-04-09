@@ -164,7 +164,7 @@ const Portfolio = () => {
           • Google - Smart Compose/Gmail Intelligence Team<br/>
           • Stanford - Remote CS106A Instructor<br/>
           • Montreal Institute for Learning Algorithms (MILA)<br/>
-          • Oxford Alignment Research Bootcamp
+          • Oxford Alignment Research Bootcamp<br/>
           • International Quant Championship - Team Canada, North American Champions (Ranked 3rd out of 18,000 teams across 131 countries)<br/>
           • Founded Canada's largest hackathon for change<br/>
           • Computing education initiatives in low-income neighborhoods<br/>
