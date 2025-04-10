@@ -95,7 +95,7 @@ const Portfolio = () => {
   };
 
   const photos: MediaItem[] = [
-    { src: '/images/archery.jpeg', alt: 'Archery training in Korea', type: 'image' },
+    { src: '/images/alyssia-archery.png', alt: 'Archery training in Korea', type: 'image' },
     { src: '/images/practice.jpeg', alt: 'Practice session', type: 'image' },
     { src: '/images/happy-place.jpeg', alt: 'Happy place', type: 'image' },
     { src: '/images/yosegi-puzzle.jpeg', alt: 'Yosegi puzzle box', type: 'image' },
@@ -104,6 +104,12 @@ const Portfolio = () => {
     { src: '/images/yc-reunion-party.mp4', alt: 'YC Reunion Party', type: 'video' },
     { src: '/images/desert-shoot.jpg', alt: 'Desert photoshoot', type: 'image' },
     { src: '/images/pnw.jpg', alt: 'Pacific Northwest', type: 'image' },
+    { src: '/images/hokkaido.jpg', alt: 'Hokkaido', type: 'image' },
+    { src: '/images/rusutsu.jpg', alt: 'Rusutsu', type: 'image' },
+    { src: '/images/oxford-archers.jpg', alt: 'Oxford Archers', type: 'image' },
+    { src: '/images/alyssia-jovellanos.jpg', alt: 'Alyssia Jovellanos', type: 'image' },
+    { src: '/images/sf-flowers.jpg', alt: 'SF Flowers', type: 'image' },
+    { src: '/images/sakura.mp4', alt: 'Sakura Season Kyoto', type: 'video' },
   ];
 
   const blogPosts = [
