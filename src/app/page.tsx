@@ -105,9 +105,7 @@ const Portfolio = () => {
     { src: '/images/desert-shoot.jpg', alt: 'Desert photoshoot', type: 'image' },
     { src: '/images/pnw.jpg', alt: 'Pacific Northwest', type: 'image' },
     { src: '/images/hokkaido.jpg', alt: 'Hokkaido', type: 'image' },
-    { src: '/images/rusutsu.jpg', alt: 'Rusutsu', type: 'image' },
     { src: '/images/oxford-archers.jpg', alt: 'Oxford Archers', type: 'image' },
-    { src: '/images/alyssia-jovellanos.jpg', alt: 'Alyssia Jovellanos', type: 'image' },
     { src: '/images/sf-flowers.jpg', alt: 'SF Flowers', type: 'image' },
     { src: '/images/sakura.mp4', alt: 'Sakura Season Kyoto', type: 'video' },
   ];
