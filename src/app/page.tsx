@@ -112,6 +112,13 @@ const Portfolio = () => {
 
   const blogPosts = [
     {
+      title: "Measuring the Unmeasurable: How Complexodynamics Could Inform AI Evaluation Science",
+      date: "July 12, 2025",
+      slug: "complexodynamics-ai-evaluation",
+      excerpt: "We can be terrible at measuring how hard our AI tests actually are. What if complexodynamics - traditionally used to study chaotic systems - could offer a mathematical framework for understanding task difficulty that doesn't depend on human intuition?",
+      readingTime: 8
+    },
+    {
       title: "After Algorithms [Chapter 1 Draft]",
       date: "Jan 24, 2025",
       slug: "after-algorithms-chapter-1",
